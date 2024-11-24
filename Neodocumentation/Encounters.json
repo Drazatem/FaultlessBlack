@@ -1,0 +1,453 @@
+{
+    "encounters": [
+        {
+            "Title": "Aspertia City",
+            "Split": 1,
+            "Types": [
+                {
+                    "Encounter Type": "Gift",
+                    "Levels": "Lvl 5",
+                    "Where": "Given by Bianca",
+                    "Notes": "Fateful Encounter",
+                    "Special": "Starter",
+                    "Pokemon": [
+                        {"Name": "Snivy"},
+                        {"Name": "Tepig"},
+                        {"Name": "Oshawott"}
+                    ]
+                },
+                {
+                    "Encounter Type": "Fishing",
+                    "Levels": "Lvls 3 - 7",
+                    "Pokemon": [
+                        {"Name": "Krabby", "Rarity": "60%"},
+                        {"Name": "Lotad", "Rarity": "40%"},
+                        {"Name": "Wooper", "Rarity": "10%"}
+                    ]
+                },
+                {
+                    "Encounter Type": "Fishing Ripple",
+                    "Levels": "Lvls 3 - 7",
+                    "Pokemon": [
+                        {"Name": "Magikarp", "Rarity": "65%"},
+                        {"Name": "Feebas", "Rarity": "30%"}
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "Route 19",
+            "Split": 1,
+            "Types": [
+                {
+                    "Encounter Type": "Grass",
+                    "Levels": "Lvls 4 - 6",
+                    "Pokemon": [
+                        {"Name": "Spinarak", "Rarity": "20%"},
+                        {"Name": "Sentret", "Rarity": "20%"},
+                        {"Name": "Wurmple", "Rarity": "20%"},
+                        {"Name": "Oddish", "Rarity": "20%"},
+                        {"Name": "Mankey", "Rarity": "10%"},
+                        {"Name": "Ledyba", "Rarity": "10%"}
+                    ]
+                },
+                {
+                    "Encounter Type": "Shaking Grass",
+                    "Levels": "Lvls 10 - 14",
+                    "Pokemon": [
+                        {"Name": "Audino", "Rarity": "65%"},
+                        {"Name": "Aipom", "Rarity": "35%"}
+                    ]
+                },
+                {
+                    "Encounter Type": "Fishing",
+                    "Levels": "Lvls 3 - 7",
+                    "Pokemon": [
+                        {"Name": "Krabby", "Rarity": "60%"},
+                        {"Name": "Lotad", "Rarity": "30%"},
+                        {"Name": "Magikarp", "Rarity": "5%"},
+                        {"Name": "Feebas", "Rarity": "5%"}
+                    ]
+                },
+                {
+                    "Encounter Type": "Fishing Ripple",
+                    "Levels": "Lvls 3 - 7",
+                    "Pokemon": [
+                        {"Name": "Magikarp", "Rarity": "65%"},
+                        {"Name": "Feebas", "Rarity": "30%"}
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "Floccesy Town",
+            "Split": 1,
+            "Types": [
+                {
+                    "Encounter Type": "Gift",
+                    "Levels": "Lvl 1",
+                    "Where": "Given by Ranger",
+                    "Notes": "Egg",
+                    "Special": "Random",
+                    "Pokemon": [
+                        {"Name": "Gible"}
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "Route 20",
+            "Split": 1,
+            "Types": [
+                {
+                    "Encounter Type": "Grass",
+                    "Levels": "Lvls 5 - 7",
+                    "Pokemon": [
+                        {"Name": "Weedle", "Rarity": "20%", "Levels": "5 - 7"},
+                        {"Name": "Caterpie", "Rarity": "20%", "Levels": "5 - 7"},
+                        {"Name": "Sewaddle", "Rarity": "20%"},
+                        {"Name": "Pidgey", "Rarity": "20%"},
+                        {"Name": "Spearow", "Rarity": "10%"},
+                        {"Name": "Starly", "Rarity": "10%"}
+                    ]
+                },
+                {
+                    "Encounter Type": "Shaking Grass",
+                    "Levels": "Lvls 10 - 14",
+                    "Pokemon": [
+                        {"Name": "Dunsparce", "Rarity": "65%"},
+                        {"Name": "Spinda", "Rarity": "35%"}
+                    ]
+                },
+                {
+                    "Encounter Type": "Dark Grass",
+                    "Levels": "Lvls 10 - 15",
+                    "Pokemon": [
+                        {"Name": "Beedrill", "Rarity": "20%"},
+                        {"Name": "Butterfree", "Rarity": "20%"},
+                        {"Name": "Sewaddle", "Rarity": "20%"},
+                        {"Name": "Pidgey", "Rarity": "20%"},
+                        {"Name": "Spearow", "Rarity": "10%"},
+                        {"Name": "Starly", "Rarity": "10%"}
+                    ]
+                },
+                {
+                    "Encounter Type": "Fishing",
+                    "Levels": "Lvls 3 - 7",
+                    "Pokemon": [
+                        {"Name": "Krabby", "Rarity": "60%"},
+                        {"Name": "Lotad", "Rarity": "30%"},
+                        {"Name": "Magikarp", "Rarity": "5%"},
+                        {"Name": "Feebas", "Rarity": "5%"}
+                    ]
+                },
+                {
+                    "Encounter Type": "Fishing Ripple",
+                    "Levels": "Lvls 3 - 7",
+                    "Pokemon": [
+                        {"Name": "Magikarp", "Rarity": "65%"},
+                        {"Name": "Feebas", "Rarity": "30%"}
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "Floccesy Ranch",
+            "Split": 1,
+            "Types": [
+                {
+                    "Encounter Type": "Grass",
+                    "Levels": "Lvls 6 - 9",
+                    "Pokemon": [
+                        {"Name": "Lillipup", "Rarity": "20%"},
+                        {"Name": "Snubbull", "Rarity": "20%"},
+                        {"Name": "Poochyena", "Rarity": "20%"},
+                        {"Name": "Houndour", "Rarity": "20%"},
+                        {"Name": "Growlithe", "Rarity": "10%"},
+                        {"Name": "Riolu", "Rarity": "10%"}
+                    ]
+                },
+                {
+                    "Encounter Type": "Shaking Grass",
+                    "Levels": "Lvls 10 - 14",
+                    "Pokemon": [
+                        {"Name": "Minccino", "Rarity": "65%"},
+                        {"Name": "Miltank", "Rarity": "35%"}
+                    ]
+                },
+                {
+                    "Encounter Type": "Fishing",
+                    "Levels": "Lvls 3 - 7",
+                    "Pokemon": [
+                        {"Name": "Krabby", "Rarity": "60%"},
+                        {"Name": "Lotad", "Rarity": "30%"},
+                        {"Name": "Wooper", "Rarity": "10%"}
+                    ]
+                },
+                {
+                    "Encounter Type": "Fishing Ripple",
+                    "Levels": "Lvls 3 - 7",
+                    "Pokemon": [
+                        {"Name": "Magikarp", "Rarity": "65%"},
+                        {"Name": "Feebas", "Rarity": "30%"}
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "Virbank City",
+            "Split": 2,
+            "Encounters": [
+                {
+                    "Encounter Type": "Trade",
+                    "Levels": "Lvl 10",
+                    "Where": "Clown Under Crane",
+                    "Notes": "Trade for a Floccesy Ranch capture",
+                    "Special": "Cottonee"
+                },
+                {
+                    "Encounter Type": "Fishing",
+                    "Levels": "Lvls 10 - 17",
+                    "Pokemon": [
+                        {"Name": "Qwilfish", "Rarity": "60%"},
+                        {"Name": "Chinchou", "Rarity": "30%"},
+                        {"Name": "Tentacool", "Rarity": "10%"}
+                    ]
+                },
+                {
+                    "Encounter Type": "Fishing Ripple",
+                    "Levels": "Lvls 10 - 17",
+                    "Pokemon": [
+                        {"Name": "Feebas", "Rarity": "65%"},
+                        {"Name": "Magikarp", "Rarity": "35%"}
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "Pokestar Studios",
+            "Split": 2,
+            "Encounters": [
+                {
+                    "Encounter Type": "Gift",
+                    "Levels": "Lvl 18",
+                    "Where": "Given by Sabrina",
+                    "Notes": "Met at Pokestar Studios",
+                    "Special": "Sabrina OT",
+                    "Pokemon": [
+                        {"Name": "Abra"},
+                        {"Name": "Ralts"},
+                        {"Name": "Swoobat"},
+                        {"Name": "Smoochum"},
+                        {"Name": "Mime Jnr."},
+                        {"Name": "Drowzee"},
+                        {"Name": "Gastly", "Rarity": "100%", "Requirement": "Venonat on team"}
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "Virbank Complex (Outside)",
+            "Split": 2,
+            "Encounters": [
+                {
+                    "Encounter Type": "Grass",
+                    "Levels": "Lvls 10 - 13",
+                    "Pokemon": [
+                        {"Name": "Venipede", "Rarity": "20%"},
+                        {"Name": "Venonat", "Rarity": "20%"},
+                        {"Name": "Shinx", "Rarity": "20%"},
+                        {"Name": "Electrike", "Rarity": "20%"},
+                        {"Name": "Grimer", "Rarity": "10%"},
+                        {"Name": "Magby", "Rarity": "10%"}
+                    ]
+                },
+                {
+                    "Encounter Type": "Shaking Grass",
+                    "Levels": "Lvls 10 - 14",
+                    "Pokemon": [
+                        {"Name": "Pachirisu", "Rarity": "65%"},
+                        {"Name": "Pikachu", "Rarity": "35%"}
+                    ]
+                },
+                {
+                    "Encounter Type": "Fishing",
+                    "Levels": "Lvls 10 - 17",
+                    "Pokemon": [
+                        {"Name": "Qwilfish", "Rarity": "60%"},
+                        {"Name": "Chinchou", "Rarity": "30%"},
+                        {"Name": "Tentacool", "Rarity": "10%"}
+                    ]
+                },
+                {
+                    "Encounter Type": "Fishing Ripple",
+                    "Levels": "Lvls 10 - 17",
+                    "Pokemon": [
+                        {"Name": "Feebas", "Rarity": "65%"},
+                        {"Name": "Magikarp", "Rarity": "35%"}
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "Virbank Complex (Inside)",
+            "Split": 2,
+            "Encounters": [
+                {
+                    "Encounter Type": "Grass",
+                    "Levels": "Lvls 15 - 18",
+                    "Pokemon": [
+                        {"Name": "Joltik", "Rarity": "20%"},
+                        {"Name": "Magnemite", "Rarity": "20%"},
+                        {"Name": "Elekid", "Rarity": "20%"},
+                        {"Name": "Elektrike", "Rarity": "20%"},
+                        {"Name": "Luxio", "Rarity": "10%"},
+                        {"Name": "Magby", "Rarity": "10%"}
+                    ]
+                },
+                {
+                    "Encounter Type": "Shaking Grass",
+                    "Levels": "Lvls 16 - 19",
+                    "Pokemon": [
+                        {"Name": "Plusle", "Rarity": "35%"},
+                        {"Name": "Minum", "Rarity": "35%"},
+                        {"Name": "Pikachu", "Rarity": "30%"}
+                    ]
+                },
+                {
+                    "Encounter Type": "Dark Grass",
+                    "Levels": "Lvls 15 - 18",
+                    "Pokemon": [
+                        {"Name": "Joltik", "Rarity": "20%"},
+                        {"Name": "Magnemite", "Rarity": "20%"},
+                        {"Name": "Elekid", "Rarity": "20%"},
+                        {"Name": "Elektrike", "Rarity": "20%"},
+                        {"Name": "Luxio", "Rarity": "10%"},
+                        {"Name": "Magby", "Rarity": "10%"}
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "Castelia Sewers",
+            "Split": 3,
+            "Encounters": [
+                {
+                    "Encounter Type": "Cave",
+                    "Levels": "Lvls 20 - 24",
+                    "Pokemon": [
+                        {"Name": "Zubat", "Rarity": "20%", "Levels": "20 - 21"},
+                        {"Name": "Stunky", "Rarity": "20%"},
+                        {"Name": "Woobat", "Rarity": "20%"},
+                        {"Name": "Gulpin", "Rarity": "20%"},
+                        {"Name": "Trubbish", "Rarity": "10%"},
+                        {"Name": "Koffing", "Rarity": "10%"}
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "Relic Passage",
+            "Split": 3,
+            "Encounters": [
+                {
+                    "Encounter Type": "Cave",
+                    "Levels": "Lvls 21 - 25",
+                    "Pokemon": [
+                        {"Name": "Cubone", "Rarity": "20%"},
+                        {"Name": "Sandshrew", "Rarity": "20%", "Levels": "21"},
+                        {"Name": "Roggenrola", "Rarity": "20%", "Levels": "21 - 24"},
+                        {"Name": "Nosepass", "Rarity": "20%"},
+                        {"Name": "Geodude", "Rarity": "10%", "Levels": "21 - 24"},
+                        {"Name": "Gible", "Rarity": "10%", "Levels": "21 - 23"}
+                    ]
+                },
+                {
+                    "Encounter Type": "Dust Cloud",
+                    "Levels": "Lvls 23 - 25",
+                    "Pokemon": [
+                        {"Name": "Drilbur", "Rarity": "100%"},
+                        {"Name": "Bagon", "Rarity": "20%"},
+                        {"Name": "Baltoy", "Rarity": "20%"}
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "Empty Lot",
+            "Split": 3,
+            "Encounters": [
+                {
+                    "Encounter Type": "Grass",
+                    "Levels": "Lvls 22 - 26",
+                    "Pokemon": [
+                        {"Name": "Skitty", "Rarity": "20%"},
+                        {"Name": "Meowth", "Rarity": "20%"},
+                        {"Name": "Glameow", "Rarity": "20%"},
+                        {"Name": "Hoppip", "Rarity": "20%", "Levels": "22 - 23"},
+                        {"Name": "Munchlax", "Rarity": "10%"},
+                        {"Name": "Vulpix", "Rarity": "10%"}
+                    ]
+                },
+                {
+                    "Encounter Type": "Shaking Grass",
+                    "Levels": "Lvls 22 - 26",
+                    "Pokemon": [
+                        {"Name": "Abra", "Rarity": "30%", "Levels": "12 - 15"},
+                        {"Name": "Smoochum", "Rarity": "30%"},
+                        {"Name": "Eevee", "Rarity": "20%"},
+                        {"Name": "Togepi", "Rarity": "20%", "Levels": "10 - 12"}
+                    ]
+                },
+                {
+                    "Encounter Type": "Dark Grass",
+                    "Levels": "Lvls 22 - 26",
+                    "Pokemon": [
+                        {"Name": "Buneary", "Rarity": "20%"},
+                        {"Name": "Farfetch'd", "Rarity": "20%"},
+                        {"Name": "Purrloin", "Rarity": "20%", "Levels": "19"},
+                        {"Name": "Machop", "Rarity": "20%"},
+                        {"Name": "Timburr", "Rarity": "10%", "Levels": "22 - 24"},
+                        {"Name": "Ralts", "Rarity": "10%", "Levels": "Lvl 18 - 19"}
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "Route 4",
+            "Split": 3,
+            "Encounters": [
+                {
+                    "Encounter Type": "Sand",
+                    "Levels": "Lvls 24 - 28",
+                    "Pokemon": [
+                        {"Name": "Gligar", "Rarity": "20%"},
+                        {"Name": "Hippopotas", "Rarity": "20%"},
+                        {"Name": "Numel", "Rarity": "20%"},
+                        {"Name": "Phanpy", "Rarity": "20%", "Levels": "21 - 24"},
+                        {"Name": "Trapinch", "Rarity": "10%"},
+                        {"Name": "Larvitar", "Rarity": "10%"}
+                    ]
+                },                
+                {
+                    "Encounter Type": "Fishing",
+                    "Levels": "Lvls 24 - 28",
+                    "Pokemon": [
+                        {"Name": "Barboach", "Rarity": "20%"},
+                        {"Name": "Shellos", "Rarity": "20%"},
+                        {"Name": "Tympole", "Rarity": "20%", "Levels": "24"}
+                    ]
+                },
+                {
+                    "Encounter Type": "Fishing Ripple",
+                    "Levels": "Lvls 24 - 28",
+                    "Pokemon": [
+                        {"Name": "Stunfisk", "Rarity": "65%"},
+                        {"Name": "Corsola", "Rarity": "35%"}
+                    ]
+                },
+
+            ]
+        }
+    ]
+}
