@@ -87,8 +87,8 @@
                     "Encounter Type": "Gift",
                     "Levels": "Lvl 1",
                     "Where": "Given by Ranger",
-                    "Notes": "Egg",
-                    "Special": "Random",
+                    "Notes": "Egg - random",
+                    "Special": "Gift",
                     "Pokemon": [
                         {"Name": "Gible"}
                     ]

@@ -1,0 +1,232 @@
+/* 
+The following contains the basic structure of a GiveEgg script (for SAK) which gives the player an egg with a random species. It follows through the same motions as GameFreak's traditional Egg Gift sequencing. 
+When adding this script to a zone, ensure the script number is changed appropriately, the appropriate text bank is edited (with the NPCMessages calling the right text messages) and you've chosen your desired species. Currently they're all set to 0xA5, because Ledyba is a really cool guy. :) 
+If you've already set flags in other scripts, make sure you use an unused flag. Unused flags can be found here (bw2) https://docs.google.com/spreadsheets/d/1bDCSu8Th7LeAHu-Z309maTc2fcZ_dIwqUbp0n8PW50M/edit#gid=0
+If you'd like the NPC to tell the player what Pokemon will be in the egg you can add a new message and use PKMNSpeciesToStrbuf in conjunction with an additional NPCMessage. 
+Finally, if you're unsure on how parts of the script work, there is a version with comments found further below. Best viewed as a C file. 
+*/
+
+
+Script_x:
+	LockAll 
+	SEPlay 0x547
+	FacePlayer 
+	GetFlag 0x1F4, 0x8000
+	CmpVarConst 0x8000, 0x0
+	ConditionalJump 0x5, EggGoodbye
+	GetFlag 0x1F5, 0x8000
+	CmpVarConst 0x8000, 0x1
+	ConditionalJump 0x5, EggHello
+	NPCMessage 0x400, 0x20, 0x0, 0x0
+	UnconditionalJump EggSelect
+	
+EggHello:
+	NPCMessage 0x400, 0x1E, 0x0, 0x0
+	SetFlag 0x1F5
+
+EggSelect:
+	YesNoBox 0x8000
+	CmpVarConst 0x8000, 0x0
+	ConditionalJump 0x5, EggDenied
+	CloseAllMessages 
+	StoreRandomNumber 0x8000, 0x7
+	UnconditionalJump EggSwitch
+
+EggCase1:
+	SetVar 0x8004, 0xA5
+	UnconditionalJump EggGive
+
+EggCase2:
+	SetVar 0x8004, 0xA5
+	UnconditionalJump EggGive
+
+EggCase3:
+	SetVar 0x8004, 0xA5
+	UnconditionalJump EggGive
+
+EggCase4:
+	SetVar 0x8004, 0xA5
+	UnconditionalJump EggGive
+
+EggCase5:
+	SetVar 0x8004, 0xA5
+	UnconditionalJump EggGive
+
+EggCase6:
+	SetVar 0x8004, 0xA5
+	UnconditionalJump EggGive
+
+EggSwitch:
+	CmpVarConst 0x8000, 0x0
+	ConditionalJump 0x1, EggCase1
+	CmpVarConst 0x8000, 0x1
+	ConditionalJump 0x1, EggCase2
+	CmpVarConst 0x8000, 0x2
+	ConditionalJump 0x1, EggCase3
+	CmpVarConst 0x8000, 0x3
+	ConditionalJump 0x1, EggCase4
+	CmpVarConst 0x8000, 0x4
+	ConditionalJump 0x1, EggCase5
+	CmpVarConst 0x8000, 0x5
+	ConditionalJump 0x1, EggCase6
+
+EggGive:
+	GiveEgg 0x8000, 0x8004, 0x0
+	CmpVarConst 0x8000, 0x0
+	ConditionalJump 0x5, EggGiveSuccess
+	NPCMessage 0x400, 0x24, 0x0, 0x0
+	CloseAllMessages2 
+	CloseAllMessages 
+	UnconditionalJump AnonymousScriptMethod_373
+
+EggGiveSuccess:
+	NPCMessage 0x400, 0x22, 0x0, 0x0
+	CloseAllMessages2 
+	CloseAllMessages 
+	SetFlag 0x1F4
+	NameToStrbuf 0x0
+	MEPlay 0x525
+	EventGrayMessage 0x25, 0x0
+	MEWait 
+	CloseEventGrayMessage 
+	NPCMessage 0x400, 0x23, 0x0, 0x0
+	CloseAllMessages2 
+	CloseAllMessages 
+	SetFlag 0x1F4
+
+AnonymousScriptMethod_373:
+	UnconditionalJump AnonymousScriptMethod_395
+
+EggDenied:
+	CloseAllMessages 
+	NPCMessage 0x400, 0x21, 0x0, 0x0
+	CloseAllMessages2 
+	CloseAllMessages 
+
+AnonymousScriptMethod_395:
+	UnconditionalJump EggFinish
+
+EggGoodbye:
+	CloseAllMessages 
+	NPCMessage 0x400, 0x1F, 0x0, 0x0
+	CloseAllMessages2 
+
+EggFinish:
+	FinishAllEvents 
+	UnlockAll 
+	SetVar 0x8000, 0x0
+	End
+
+
+------------------------------------------------
+//SCRIPT WITH COMMENTS
+
+Script_1:
+	LockAll 
+	SEPlay 0x547
+	FacePlayer 
+	GetFlag 0x1F4, 0x8000 // This first flag is only set after the player has received an egg. If it is set, the script jumps and plays a text message (intended to be a goodbye message) before ending the script.
+	CmpVarConst 0x8000, 0x0
+	ConditionalJump 0x5, EggGoodbye
+	GetFlag 0x1F5, 0x8000 // This secondary flag is set after the NPC is talked to for the first time. If the player has not talked to the NPC before, the script jumps and plays a special message before continuing the script.
+	CmpVarConst 0x8000, 0x1
+	ConditionalJump 0x5, EggHello
+	NPCMessage 0x400, 0x20, 0x0, 0x0
+	UnconditionalJump EggSelect
+	
+EggHello: // This will play an introductory message, then set a flag so this messaage will not be played again if the NPC is talked to. 
+	NPCMessage 0x400, 0x1E, 0x0, 0x0
+	SetFlag 0x1F5
+
+EggSelect:
+	YesNoBox 0x8000
+	CmpVarConst 0x8000, 0x0
+	ConditionalJump 0x5, EggDenied
+	CloseAllMessages 
+	StoreRandomNumber 0x8000, 0x7 // Stores a random number (from 0->6) 
+	UnconditionalJump EggSwitch
+
+EggCase1:
+	SetVar 0x8004, 0xA5 // Replace 0xA5 with the hex value of your chosen species.
+	UnconditionalJump EggGive
+
+EggCase2:
+	SetVar 0x8004, 0xA5
+	UnconditionalJump EggGive
+
+EggCase3:
+	SetVar 0x8004, 0xA5
+	UnconditionalJump EggGive
+
+EggCase4:
+	SetVar 0x8004, 0xA5
+	UnconditionalJump EggGive
+
+EggCase5:
+	SetVar 0x8004, 0xA5
+	UnconditionalJump EggGive
+
+EggCase6:
+	SetVar 0x8004, 0xA5
+	UnconditionalJump EggGive
+
+EggSwitch: // Switches to the appropriate EggCase sequence, depending on the randomly pulled number. 
+	CmpVarConst 0x8000, 0x0
+	ConditionalJump 0x1, EggCase1
+	CmpVarConst 0x8000, 0x1
+	ConditionalJump 0x1, EggCase2
+	CmpVarConst 0x8000, 0x2
+	ConditionalJump 0x1, EggCase3
+	CmpVarConst 0x8000, 0x3
+	ConditionalJump 0x1, EggCase4
+	CmpVarConst 0x8000, 0x4
+	ConditionalJump 0x1, EggCase5
+	CmpVarConst 0x8000, 0x5
+	ConditionalJump 0x1, EggCase6
+
+EggGive: // Gives the egg to the player, with the determined species.
+	GiveEgg 0x8000, 0x8004, 0x0
+	CmpVarConst 0x8000, 0x0
+	ConditionalJump 0x5, EggGiveSuccess
+	NPCMessage 0x400, 0x24, 0x0, 0x0 // If the player did not have space for the egg, plays this message and ends the script.
+	CloseAllMessages2 
+	CloseAllMessages 
+	UnconditionalJump AnonymousScriptMethod_373
+
+EggGiveSuccess:
+	NPCMessage 0x400, 0x22, 0x0, 0x0 // Plays a message to the player before giving the egg.
+	CloseAllMessages2 
+	CloseAllMessages 
+	SetFlag 0x1F4
+	NameToStrbuf 0x0 // Stores the player's name to a string buffer. 
+	MEPlay 0x525
+	EventGrayMessage 0x25, 0x0 // Plays a message in a special textbox (e.g. '{PLAYER} Received the egg!') 
+	MEWait 
+	CloseEventGrayMessage 
+	NPCMessage 0x400, 0x23, 0x0, 0x0 // NPC talks after the player has received the egg. 
+	CloseAllMessages2 
+	CloseAllMessages 
+	SetFlag 0x1F4
+
+AnonymousScriptMethod_373:
+	UnconditionalJump AnonymousScriptMethod_395
+
+EggDenied:
+	CloseAllMessages 
+	NPCMessage 0x400, 0x21, 0x0, 0x0 // Plays a message when the player selects 'No' in the YesNoBox, then ends the script. 
+	CloseAllMessages2 
+	CloseAllMessages 
+
+AnonymousScriptMethod_395:
+	UnconditionalJump EggFinish
+
+EggGoodbye:
+	CloseAllMessages 
+	NPCMessage 0x400, 0x1F, 0x0, 0x0 // Plays this message when the player talks to the NPC after already receiving an egg. 
+	CloseAllMessages2 
+
+EggFinish: // Obviously, ends the script. 
+	FinishAllEvents 
+	UnlockAll 
+	SetVar 0x8000, 0x0
+	End

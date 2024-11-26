@@ -1,6 +1,8 @@
 import requests
 import json
 from typing import List, Dict, Union
+from ruamel.yaml import YAML
+from ruamel.yaml.comments import CommentedMap, CommentedSeq
 
 # Constants
 BASE_URL = "https://pokeapi.co/api/v2/pokemon/"
@@ -69,7 +71,7 @@ def get_learnset(data: dict) -> List[dict]:
         learnset = extract_moves_for_version("sun-moon")
         version_group = "sun-moon"
 
-    return [{"Version Group": version_group}] + learnset
+    return [{"Base Learnset Version": version_group}] + learnset
 
 def get_evolution_chain(species_data: dict) -> List[dict]:
     """Fetch and parse evolution chain data for the specific Pokémon."""
@@ -106,6 +108,29 @@ def get_pokemon_sprite(poke_id: int):
     url = f"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/{poke_id}.gif"
     return url
 
+def apply_flow_style(data):
+    """Recursively apply flow style to specified keys."""
+    if isinstance(data, dict):
+        cm = CommentedMap(data)
+        for key, value in cm.items():
+            if key in {"Type", "Old", "New"}:
+                cm[key] = CommentedSeq(value)
+                cm[key].fa.set_flow_style()
+            elif key in {"Evolution", "Learnset", "Stats"}:
+                cm[key] = CommentedSeq(
+                    [apply_flow_style(item) for item in value if isinstance(item, dict)]
+                )
+                cm[key].fa.set_flow_style()
+            else:
+                cm[key] = apply_flow_style(value)
+        return cm
+    elif isinstance(data, list):
+        cs = CommentedSeq(data)
+        for i, item in enumerate(cs):
+            cs[i] = apply_flow_style(item)
+        return cs
+    return data
+
 def fetch_pokemon_data(poke_id: int) -> dict:
     """Fetch data for a single Pokémon."""
     pokemon_data = fetch_data(f"{BASE_URL}{poke_id}")
@@ -115,30 +140,33 @@ def fetch_pokemon_data(poke_id: int) -> dict:
     species_data = fetch_data(f"{SPECIES_URL}{poke_id}")
     evolution_chain = get_evolution_chain(species_data) if species_data else [{"Method": "Error"}]
 
-    return {
-    "Number": poke_id,
-    "Name": pokemon_data["name"].capitalize(),
-    "Type": [t.capitalize() for t in get_types(pokemon_data)],
-    "Abilities": {
-        "Old": [a.capitalize() for a in get_abilities(pokemon_data)],
-        "New": ["",""]},
-    "Evolution": [
-        {key.capitalize(): (value.capitalize() if isinstance(value, str) else value) for key, value in evo.items()}
-        for evo in evolution_chain
-    ],
-    "Stats": {
-        "Vanilla": {k.capitalize(): v for k, v in get_stats(pokemon_data).items()},
-        "Updated": {k.capitalize(): v for k, v in get_stats(pokemon_data).items()},
-        "Changes": DEFAULT_STATS
-    },
-    "Learnset": [
-        {key.capitalize(): (value.capitalize() if isinstance(value, str) else value) for key, value in move.items()}
-        for move in get_learnset(pokemon_data)
-    ],
-    "sprite_url": get_pokemon_sprite(poke_id)
-    }
+    return apply_flow_style({
+        "Number": poke_id,
+        "Name": pokemon_data["name"].capitalize(),
+        "Type": [t.capitalize() for t in get_types(pokemon_data)],
+        "Abilities": {
+            "Old": [a.capitalize() for a in get_abilities(pokemon_data)],
+            "New": ["", ""]
+        },
+        "Evolution": [
+            {key.capitalize(): (value.capitalize() if isinstance(value, str) else value) for key, value in evo.items()}
+            for evo in evolution_chain
+        ],
+        "Stats": [
+            {"Vanilla": {k.capitalize(): v for k, v in get_stats(pokemon_data).items()}},
+            {"Updated": {k.capitalize(): v for k, v in get_stats(pokemon_data).items()}},
+            {"Changes": DEFAULT_STATS}
+        ],
+        "Learnset": [
+            {key.capitalize(): (value.capitalize() if isinstance(value, str) else value) for key, value in move.items()}
+            for move in get_learnset(pokemon_data)
+        ],
+        "sprite_url": get_pokemon_sprite(poke_id),
+        "Location": [""],
+        "Split": "",
+        "Changelog": ""
+    })
 
-# Main execution
 def main():
     pokemon_data = []
     for poke_id in range(1, 650):  # 649 max
@@ -146,9 +174,11 @@ def main():
         data = fetch_pokemon_data(poke_id)
         pokemon_data.append(data)
 
-    output_file = "pokemon_gen1-5.json"
+    output_file = "pokemon_gen1-5.yaml"
+    yaml = YAML()
+    yaml.default_flow_style = False
     with open(output_file, "w") as file:
-        json.dump(pokemon_data, file, indent=4)
+        yaml.dump(pokemon_data, file)
     print(f"Data fetching complete! Saved to {output_file}")
 
 if __name__ == "__main__":
