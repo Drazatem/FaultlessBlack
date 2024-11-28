@@ -340,7 +340,7 @@
       { Move: Tackle, Level: 1 },
       { Move: String-shot, Level: 1 },
       { Move: Smog, Level: 5, Modification: "New" },
-      { Move: Bug-bite, Level: 6, Modification: "Early" },
+      { Move: Bug-bite, Level: 6, Modification: "Early" }
     ]
   sprite_url: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/10.gif
   Location:
@@ -365,13 +365,13 @@
       Base learnset version: Sword-shield, 
       { Move: Harden, Level: 7,},
       { Move: Struggle-bug, Level: 8, Modification: "New" },
-      { Move: Iron-defense, Level: 9, Modification: "New" },
+      { Move: Iron-defense, Level: 9, Modification: "New" }
       ]
   sprite_url: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/11.gif
   Location:
     - "Evolve Caterpie"
   Split: "1"
-  Changelog: "Added moves, ability and changed stats to reflect Metapod's descriptions"
+  Changelog: "Added moves, ability and changed stats to reflect Metapod's defensive profile"
 - Number: 12
   Name: Butterfree
   Type: [Bug, Flying]
@@ -382,7 +382,7 @@
   Stats:
     [
       Vanilla: { Hp: 60, Attack: 45, Defense: 50, Special-attack: 90, Special-defense: 80, Speed: 70, Bst: 395 },
-      Updated: { Hp: 60, Attack: 30, Defense: 70, Special-attack: 115, Special-defense: 80, Speed: 70, Bst: 465 },
+      Updated: { Hp: 60, Attack: 30, Defense: 70, Special-attack: 115, Special-defense: 95, Speed: 95, Bst: 465 },
       Changes: { Hp: 0, Attack: -15, Defense: 20, Special-attack: 25, Special-defense: 15, Speed: 25, Bst: 70 },
     ]
   Learnset:
@@ -409,7 +409,7 @@
       { Move: Thunder, Level: 49, Modification: "New" },
       { Move: Quiver-dance, Level: 54},
       { Move: Blizzard, Level: 59, Modification: "New" },
-      { Move: Hurricane, Level: 64, Modification: "New" },
+      { Move: Hurricane, Level: 64, Modification: "New" }
     ]
   sprite_url: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/12.gif
   Location:
@@ -421,7 +421,7 @@
   Type: [Bug, Poison]
   Abilities:
     Old: [Shield-dust, "Run-away [hidden]"]
-    New: ["", ""]
+    New: [Shield-dust, Run-away]
   Evolution: [{ Evolves to: Kakuna, Method: Level-up, Level: 7 }]
   Stats:
     [
@@ -432,183 +432,213 @@
   Learnset:
     [
       Base learnset version: Sun-moon,
-      { Move: Poison-sting, Level: 1, Modification: "" },
-      { Move: String-shot, Level: 1, Modification: "" },
-      { Move: Bug-bite, Level: 9, Modification: "" },
+      { Move: Poison-sting, Level: 1},
+      { Move: String-shot, Level: 1},
+      { Move: Bug-bite, Level: 6, Modification: "Early" }
     ]
   sprite_url: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/13.gif
   Location:
-    - ""
-  Split: ""
+    - "Route 20"
+  Split: "1"
   Changelog: ""
 - Number: 14
   Name: Kakuna
   Type: [Bug, Poison]
   Abilities:
     Old: [Shed-skin]
-    New: ["", ""]
+    New: [Shed-skin, Shell-armor]
   Evolution: [{ Evolves to: Beedrill, Method: Level-up, Level: 10 }]
   Stats:
     [
       Vanilla: { Hp: 45, Attack: 25, Defense: 50, Special-attack: 25, Special-defense: 25, Speed: 35, Bst: 205 },
-      Updated: { Hp: 45, Attack: 25, Defense: 50, Special-attack: 25, Special-defense: 25, Speed: 35, Bst: 205 },
-      Changes: { Hp: 0, Attack: 0, Defense: 0, Special-attack: 0, Special-defense: 0, Speed: 0, Bst: 0 },
+      Updated: { Hp: 35, Attack: 25, Defense: 140, Special-attack: 25, Special-defense: 25, Speed: 35, Bst: 205 },
+      Changes: { Hp: -10, Attack: 0, Defense: 90, Special-attack: 0, Special-defense: 0, Speed: 0, Bst: 80 },
     ]
-  Learnset: [Base learnset version: Sun-moon, { Move: Harden, Level: 1, Modification: "" }]
+  Learnset: [
+    Base learnset version: Sun-moon, 
+    { Move: Harden, Level: 7},
+    { Move: Struggle-bug, Level: 8, Modification: "New" },
+    { Move: Iron-defense, Level: 9, Modification: "New" },
+    ]
   sprite_url: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/14.gif
   Location:
-    - ""
-  Split: ""
-  Changelog: ""
+    - "Evolve Weedle"
+  Split: "1"
+  Changelog: "Added moves, ability and changed stats to reflect Kakuna's defensive profile"
 - Number: 15
   Name: Beedrill
   Type: [Bug, Poison]
   Abilities:
     Old: [Swarm, "Sniper [hidden]"]
-    New: ["", ""]
+    New: [Sniper, Adaptability]
   Evolution: []
   Stats:
     [
       Vanilla: { Hp: 65, Attack: 90, Defense: 40, Special-attack: 45, Special-defense: 80, Speed: 75, Bst: 395 },
-      Updated: { Hp: 65, Attack: 90, Defense: 40, Special-attack: 45, Special-defense: 80, Speed: 75, Bst: 395 },
-      Changes: { Hp: 0, Attack: 0, Defense: 0, Special-attack: 0, Special-defense: 0, Speed: 0, Bst: 0 },
+      Updated: { Hp: 70, Attack: 105, Defense: 70, Special-attack: 35, Special-defense: 80, Speed: 105, Bst: 465 },
+      Changes: { Hp: 5, Attack: 15, Defense: 30, Special-attack: -10, Special-defense: 0, Speed: 30, Bst: 70 },
     ]
   Learnset:
     [
       Base learnset version: Sun-moon,
-      { Move: Fury-attack, Level: 1, Modification: "" },
-      { Move: Twineedle, Level: 1, Modification: "" },
-      { Move: Rage, Level: 14, Modification: "" },
-      { Move: Pursuit, Level: 17, Modification: "" },
-      { Move: Focus-energy, Level: 20, Modification: "" },
-      { Move: Venoshock, Level: 23, Modification: "" },
-      { Move: Assurance, Level: 26, Modification: "" },
-      { Move: Toxic-spikes, Level: 29, Modification: "" },
-      { Move: Pin-missile, Level: 32, Modification: "" },
-      { Move: Poison-jab, Level: 35, Modification: "" },
-      { Move: Agility, Level: 38, Modification: "" },
-      { Move: Endeavor, Level: 41, Modification: "" },
-      { Move: Fell-stinger, Level: 44, Modification: "" },
+      { Move: Fury-attack, Level: 1 },
+      { Move: Twineedle, Level: 1 },
+      { Move: Fury-attack, Level: 10, Modification: "Early" },
+      { Move: Twineedle, Level: 11, Modification: "Later" },
+      { Move: Rage, Level: 13},
+      { Move: Pursuit, Level: 17 },
+      { Move: Retaliate, Level: 19, Modification: "New"},
+      { Move: Focus-energy, Level: 20},
+      { Move: Poison-tail, Level: 23, Modification: "New" },
+      { Move: Toxic-spikes, Level: 26, Modification: "Earlier" },
+      { Move: Night-slash, Level: 29, Modification: "New" },
+      { Move: Drill-peck, Level: 32, Modification: "New" },
+      { Move: Leech-life, Level: 37, Modification: "New" },
+      { Move: Poison-jab, Level: 39, Modification: "Later" },
+      { Move: Drill-run, Level: 42, Modification: "New" },
+      { Move: Cross-poison, Level: 47, Modification: "New" },
+      { Move: Swords-dance, Level: 54, Modification: "New" },
+      { Move: Megahorn, Level: 59, Modification: "New" },
+      { Move: Outrage, Level: 66, Modification: "New"}
     ]
   sprite_url: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/15.gif
   Location:
-    - ""
-  Split: ""
-  Changelog: ""
+    - "Evolve Kakuna"
+  Split: "1"
+  Changelog: "While its attacking stats aren't as strong as its counterpart Butterfree, Beedrill stands out with its offensive abilities, higher speed and faster access to strong STAB moves."
 - Number: 16
   Name: Pidgey
   Type: [Normal, Flying]
   Abilities:
     Old: [Keen-eye, Tangled-feet, "Big-pecks [hidden]"]
-    New: ["", ""]
+    New: [Big-pecks, Tangled-feet]
   Evolution: [{ Evolves to: Pidgeotto, Method: Level-up, Level: 18 }]
   Stats:
     [
       Vanilla: { Hp: 40, Attack: 45, Defense: 40, Special-attack: 35, Special-defense: 35, Speed: 56, Bst: 251 },
-      Updated: { Hp: 40, Attack: 45, Defense: 40, Special-attack: 35, Special-defense: 35, Speed: 56, Bst: 251 },
-      Changes: { Hp: 0, Attack: 0, Defense: 0, Special-attack: 0, Special-defense: 0, Speed: 0, Bst: 0 },
+      Updated: { Hp: 40, Attack: 55, Defense: 50, Special-attack: 25, Special-defense: 45, Speed: 61, Bst: 276 },
+      Changes: { Hp: 0, Attack: 10, Defense: 10, Special-attack: -10, Special-defense: 10, Speed: 5, Bst: 25 },
     ]
   Learnset:
     [
       Base learnset version: Sun-moon,
-      { Move: Tackle, Level: 1, Modification: "" },
-      { Move: Sand-attack, Level: 5, Modification: "" },
-      { Move: Gust, Level: 9, Modification: "" },
-      { Move: Quick-attack, Level: 13, Modification: "" },
-      { Move: Whirlwind, Level: 17, Modification: "" },
-      { Move: Twister, Level: 21, Modification: "" },
-      { Move: Feather-dance, Level: 25, Modification: "" },
-      { Move: Agility, Level: 29, Modification: "" },
-      { Move: Wing-attack, Level: 33, Modification: "" },
-      { Move: Roost, Level: 37, Modification: "" },
-      { Move: Tailwind, Level: 41, Modification: "" },
-      { Move: Mirror-move, Level: 45, Modification: "" },
-      { Move: Air-slash, Level: 49, Modification: "" },
-      { Move: Hurricane, Level: 53, Modification: "" },
+      { Move: Peck, Level: 1, Modification: "New" },
+      { Move: Tackle, Level: 1},
+      { Move: Sand-attack, Level: 1, Modification: "Early" },
+      { Move: Mud-slap, Level: 4, Modification: "New" },
+      { Move: Quick-attack, Level: 9, Modification: "Early" },
+      { Move: Aerial-ace, Level: 13, Modification: "New" },
+      { Move: Pursuit, Level: 15, Modification: "New" },
+      { Move: Steel-wing, Level: 17, Modification: "New" },
+      { Move: U-turn, Level: 19, Modification: "New" },
+      { Move: Acrobatics, Level: 24, Modification: "New" },
+      { Move: Feather-dance, Level: 29, Modification: "Later" },
+      { Move: Agility, Level: 31, Modification: "Later" },
+      { Move: Wing-attack, Level: 33 },
+      { Move: Roost, Level: 37 },
+      { Move: Tailwind, Level: 41 },
+      { Move: Mirror-move, Level: 45 },
+      { Move: Brave-bird, Level: 51, Modification: "New" },
+      { Move: Thrash, Level: 53, Modification: "New" },
+      { Move: Sky-attack, Level: 60, Modification: "New" }
     ]
   sprite_url: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/16.gif
   Location:
-    - ""
-  Split: ""
-  Changelog: ""
+    - "Route 20"
+  Split: "1"
+  Changelog: "Oriented Pidgey towards a more physical, slightly bulkier yet still agile attacking role."
 - Number: 17
   Name: Pidgeotto
   Type: [Normal, Flying]
   Abilities:
     Old: [Keen-eye, Tangled-feet, "Big-pecks [hidden]"]
-    New: ["", ""]
+    New: [Keen-eye, Tangled-feet]
   Evolution: [{ Evolves to: Pidgeot, Method: Level-up, Level: 36 }]
   Stats:
     [
       Vanilla: { Hp: 63, Attack: 60, Defense: 55, Special-attack: 50, Special-defense: 50, Speed: 71, Bst: 349 },
-      Updated: { Hp: 63, Attack: 60, Defense: 55, Special-attack: 50, Special-defense: 50, Speed: 71, Bst: 349 },
-      Changes: { Hp: 0, Attack: 0, Defense: 0, Special-attack: 0, Special-defense: 0, Speed: 0, Bst: 0 },
+      Updated: { Hp: 63, Attack: 70, Defense: 65, Special-attack: 40, Special-defense: 60, Speed: 71, Bst: 369 },
+      Changes: { Hp: 0, Attack: 10, Defense: 10, Special-attack: -10, Special-defense: 10, Speed: 0, Bst: 20 },
     ]
   Learnset:
     [
       Base learnset version: Sun-moon,
-      { Move: Gust, Level: 1, Modification: "" },
-      { Move: Sand-attack, Level: 1, Modification: "" },
-      { Move: Tackle, Level: 1, Modification: "" },
-      { Move: Quick-attack, Level: 13, Modification: "" },
-      { Move: Whirlwind, Level: 17, Modification: "" },
-      { Move: Twister, Level: 22, Modification: "" },
-      { Move: Feather-dance, Level: 27, Modification: "" },
-      { Move: Agility, Level: 32, Modification: "" },
-      { Move: Wing-attack, Level: 37, Modification: "" },
-      { Move: Roost, Level: 42, Modification: "" },
-      { Move: Tailwind, Level: 47, Modification: "" },
-      { Move: Mirror-move, Level: 52, Modification: "" },
-      { Move: Air-slash, Level: 57, Modification: "" },
-      { Move: Hurricane, Level: 62, Modification: "" },
+      { Move: Peck, Level: 1, Modification: "Inherited" },
+      { Move: Tackle, Level: 1, Modification: "Inherited"},
+      { Move: Sand-attack, Level: 1, Modification: "Inherited" },
+      { Move: Mud-slap, Level: 4, Modification: "Inherited" },
+      { Move: Quick-attack, Level: 9, Modification: "Inherited" },
+      { Move: Aerial-ace, Level: 13, Modification: "Inherited" },
+      { Move: Pursuit, Level: 15, Modification: "Inherited" },
+      { Move: Steel-wing, Level: 17, Modification: "Inherited" },
+      { Move: Crush-claw, Level: 18, Modification: "New" },
+      { Move: U-turn, Level: 22, Modification: "New" },
+      { Move: Acrobatics, Level: 27, Modification: "New" },
+      { Move: Feather-dance, Level: 31, Modification: "Later" },
+      { Move: Agility, Level: 34, Modification: "Later" },
+      { Move: Wing-attack, Level: 36, Modification: "Earlier" },
+      { Move: Roost, Level: 40, Modfification: "Earlier" },
+      { Move: Tailwind, Level: 45 },
+      { Move: Mirror-move, Level: 52 },
+      { Move: Brave-bird, Level: 53, Modification: "New" },
+      { Move: Thrash, Level: 57, Modification: "New" },
+      { Move: Sky-attack, Level: 62, Modification: "New" }
     ]
   sprite_url: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/17.gif
   Location:
-    - ""
-  Split: ""
-  Changelog: ""
+    - "Evolve Pidgey"
+  Split: "2"
+  Changelog: "Continues Pidgey's alterations, an additional move added to reflect some dex lore"
 - Number: 18
   Name: Pidgeot
   Type: [Normal, Flying]
   Abilities:
     Old: [Keen-eye, Tangled-feet, "Big-pecks [hidden]"]
-    New: ["", ""]
+    New: [Speed-boost, Tangled-feet]
   Evolution: []
   Stats:
     [
       Vanilla: { Hp: 83, Attack: 80, Defense: 75, Special-attack: 70, Special-defense: 70, Speed: 101, Bst: 479 },
-      Updated: { Hp: 83, Attack: 80, Defense: 75, Special-attack: 70, Special-defense: 70, Speed: 101, Bst: 479 },
-      Changes: { Hp: 0, Attack: 0, Defense: 0, Special-attack: 0, Special-defense: 0, Speed: 0, Bst: 0 },
+      Updated: { Hp: 94, Attack: 90, Defense: 85, Special-attack: 70, Special-defense: 80, Speed: 111, Bst: 530 },
+      Changes: { Hp: 11, Attack: 10, Defense: 10, Special-attack: -10, Special-defense: 10, Speed: 10, Bst: 0 },
     ]
   Learnset:
     [
       Base learnset version: Sun-moon,
-      { Move: Gust, Level: 1, Modification: "" },
-      { Move: Sand-attack, Level: 1, Modification: "" },
-      { Move: Tackle, Level: 1, Modification: "" },
-      { Move: Quick-attack, Level: 1, Modification: "" },
-      { Move: Hurricane, Level: 1, Modification: "" },
-      { Move: Whirlwind, Level: 17, Modification: "" },
-      { Move: Twister, Level: 22, Modification: "" },
-      { Move: Feather-dance, Level: 27, Modification: "" },
-      { Move: Agility, Level: 32, Modification: "" },
-      { Move: Wing-attack, Level: 38, Modification: "" },
-      { Move: Roost, Level: 44, Modification: "" },
-      { Move: Tailwind, Level: 50, Modification: "" },
-      { Move: Mirror-move, Level: 56, Modification: "" },
-      { Move: Air-slash, Level: 62, Modification: "" },
+      { Move: Peck, Level: 1, Modification: "Inherited" },
+      { Move: Tackle, Level: 1, Modification: "Inherited"},
+      { Move: Sand-attack, Level: 1, Modification: "Inherited" },
+      { Move: Mud-slap, Level: 4, Modification: "Inherited" },
+      { Move: Quick-attack, Level: 9, Modification: "Inherited" },
+      { Move: Aerial-ace, Level: 13, Modification: "Inherited" },
+      { Move: Pursuit, Level: 15, Modification: "Inherited" },
+      { Move: Steel-wing, Level: 17, Modification: "Inherited" },
+      { Move: Crush-claw, Level: 18, Modification: "Inherited" },
+      { Move: U-turn, Level: 22, Modification: "Inherited" },
+      { Move: Acrobatics, Level: 27, Modification: "Inherited" },
+      { Move: Feather-dance, Level: 31, Modification: "Inherited" },
+      { Move: Agility, Level: 34, Modification: "Inherited" },
+      { Move: Extreme-speed, Level: 36, Modification: "New" },
+      { Move: Wing-attack, Level: 38 },
+      { Move: Roost, Level: 44 },
+      { Move: Tailwind, Level: 49, Modification: "Earlier" },
+      { Move: Mirror-move, Level: 54, Modification: "Earlier" },
+      { Move: Brave-bird, Level: 56, Modification: "New" },
+      { Move: Thrash, Level: 59, Modification: "New" },
+      { Move: Sky-attack, Level: 66, Modification: "New" },
+      { Move: Outrage, Level: 69, Modification: "New" }
     ]
   sprite_url: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/18.gif
   Location:
-    - ""
-  Split: ""
-  Changelog: ""
+    - "Evolve Pidgeotto"
+  Split: "3"
+  Changelog: "While its stats have received relatively tame adjustments, Pidgeot's speed finally lives up to its dex entries."
 - Number: 19
   Name: Rattata
   Type: [Normal]
   Abilities:
     Old: [Run-away, Guts, "Hustle [hidden]"]
-    New: ["", ""]
+    New: ["Run-away", "Guts"]
   Evolution: [{ Evolves to: Raticate, Method: Level-up, Level: 20 }]
   Stats:
     [
@@ -643,7 +673,7 @@
   Type: [Normal]
   Abilities:
     Old: [Run-away, Guts, "Hustle [hidden]"]
-    New: ["", ""]
+    New: ["Hustle", "Guts"]
   Evolution: []
   Stats:
     [
@@ -677,74 +707,87 @@
   Changelog: ""
 - Number: 21
   Name: Spearow
-  Type: [Normal, Flying]
+  Type: {Old: [Normal, Flying], New: [Flying]}
   Abilities:
     Old: [Keen-eye, "Sniper [hidden]"]
-    New: ["", ""]
+    New: [Keen-eye, Sniper]
   Evolution: [{ Evolves to: Fearow, Method: Level-up, Level: 20 }]
   Stats:
     [
       Vanilla: { Hp: 40, Attack: 60, Defense: 30, Special-attack: 31, Special-defense: 31, Speed: 70, Bst: 262 },
-      Updated: { Hp: 40, Attack: 60, Defense: 30, Special-attack: 31, Special-defense: 31, Speed: 70, Bst: 262 },
-      Changes: { Hp: 0, Attack: 0, Defense: 0, Special-attack: 0, Special-defense: 0, Speed: 0, Bst: 0 },
+      Updated: { Hp: 40, Attack: 65, Defense: 35, Special-attack: 30, Special-defense: 35, Speed: 70, Bst: 275 },
+      Changes: { Hp: 0, Attack: 5, Defense: 5, Special-attack: -1, Special-defense: 4, Speed: 0, Bst: 13 },
     ]
   Learnset:
     [
       Base learnset version: Sun-moon,
-      { Move: Growl, Level: 1, Modification: "" },
-      { Move: Peck, Level: 1, Modification: "" },
-      { Move: Leer, Level: 4, Modification: "" },
-      { Move: Pursuit, Level: 8, Modification: "" },
-      { Move: Fury-attack, Level: 11, Modification: "" },
-      { Move: Aerial-ace, Level: 15, Modification: "" },
-      { Move: Mirror-move, Level: 18, Modification: "" },
-      { Move: Assurance, Level: 22, Modification: "" },
-      { Move: Agility, Level: 25, Modification: "" },
-      { Move: Focus-energy, Level: 29, Modification: "" },
-      { Move: Roost, Level: 32, Modification: "" },
-      { Move: Drill-peck, Level: 36, Modification: "" },
+      { Move: Peck, Level: 1 },
+      { Move: Growl, Level: 1 },
+      { Move: Leer, Level: 2 },
+      { Move: Rage, Level: 3, Modification: "New" },
+      { Move: Pursuit, Level: 8 },
+      { Move: Fury-attack, Level: 9, Modification: "Earlier" },
+      { Move: Pluck, Level: 11, Modification: "New" },
+      { Move: Focus-energy, Level: 13, Modification: "Earlier" },
+      { Move: Hone-claws, Level: 16, Modification: "New" },
+      { Move: Facade, Level: 18, Modification: "New" },
+      { Move: Assurance, Level: 22 },
+      { Move: Drill-peck, Level: 26, Modification: "Earlier" },
+      { Move: Roost, Level: 31, Modification: "Earlier" },
+      { Move: Drill-run, Level: 35, Modification: "New" },
+      { Move: Brave-bird, Level: 39, Modification: "New" },
+      { Move: Double-edge, Level: 44, Modification: "New" },
+      { Move: Sky-attack, Level: 50, Modification: "New" },
     ]
   sprite_url: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/21.gif
   Location:
-    - ""
-  Split: ""
-  Changelog: ""
+    - "Route 20"
+  Split: "1"
+  Changelog: "Dropped the normal typing to differentiate Spearow/Fearow by giving them a more interesting defensive profile."
 - Number: 22
   Name: Fearow
-  Type: [Normal, Flying]
+  Type: {Old: [Normal, Flying], New: [Flying]}
   Abilities:
     Old: [Keen-eye, "Sniper [hidden]"]
-    New: ["", ""]
+    New: [Intimidate, Sniper]
   Evolution: []
   Stats:
     [
       Vanilla: { Hp: 65, Attack: 90, Defense: 65, Special-attack: 61, Special-defense: 61, Speed: 100, Bst: 442 },
-      Updated: { Hp: 65, Attack: 90, Defense: 65, Special-attack: 61, Special-defense: 61, Speed: 100, Bst: 442 },
-      Changes: { Hp: 0, Attack: 0, Defense: 0, Special-attack: 0, Special-defense: 0, Speed: 0, Bst: 0 },
+      Updated: { Hp: 85, Attack: 95, Defense: 70, Special-attack: 60, Special-defense: 70, Speed: 101, Bst: 481 },
+      Changes: { Hp: 20, Attack: 5, Defense: 5, Special-attack: -1, Special-defense: +9, Speed: 1, Bst: 39 },
     ]
   Learnset:
     [
       Base learnset version: Sun-moon,
-      { Move: Leer, Level: 1, Modification: "" },
-      { Move: Growl, Level: 1, Modification: "" },
-      { Move: Peck, Level: 1, Modification: "" },
-      { Move: Pursuit, Level: 1, Modification: "" },
-      { Move: Pluck, Level: 1, Modification: "" },
-      { Move: Drill-run, Level: 1, Modification: "" },
-      { Move: Fury-attack, Level: 11, Modification: "" },
-      { Move: Aerial-ace, Level: 15, Modification: "" },
-      { Move: Mirror-move, Level: 18, Modification: "" },
-      { Move: Assurance, Level: 23, Modification: "" },
-      { Move: Agility, Level: 27, Modification: "" },
-      { Move: Focus-energy, Level: 32, Modification: "" },
-      { Move: Roost, Level: 36, Modification: "" },
-      { Move: Drill-peck, Level: 41, Modification: "" },
+      { Move: Peck, Level: 1, Modification: "Inherited" },
+      { Move: Growl, Level: 1, Modification: "Inherited" },
+      { Move: Mirror-move, Level: 1, Modification: "Relearner" },
+      { Move: Leer, Level: 2, Modification: "Inherited" },
+      { Move: Rage, Level: 3, Modification: "Inherited" },
+      { Move: Pursuit, Level: 8, Modification: "Inherited" },
+      { Move: Fury-attack, Level: 9, Modification: "Inherited" },
+      { Move: Pluck, Level: 11, Modification: "Inherited" },
+      { Move: Focus-energy, Level: 13, Modification: "Inherited" },
+      { Move: Hone-claws, Level: 16, Modification: "Inherited" },
+      { Move: Facade, Level: 18, Modification: "Inherited" },
+      { Move: Sky-drop, Level: 20, Modification: "New" },
+      { Move: Assurance, Level: 23},
+      { Move: Drill-peck, Level: 27, Modification: "Earlier" },
+      { Move: Slash, Level: 29, Modification: "New" },
+      { Move: Taunt, Level: 31, Modification: "New" },
+      { Move: Roost, Level: 34, Modification: "Earlier" },
+      { Move: Drill-run, Level: 37, Modification: "Earlier" },
+      { Move: Brave-bird, Level: 42, Modification: "New" },
+      { Move: Double-edge, Level: 47, Modification: "New" },
+      { Move: Thrash, Level: 55, Modification: "New" },
+      { Move: Sky-attack, Level: 59, Modification: "New" },
     ]
   sprite_url: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/22.gif
   Location:
-    - ""
-  Split: ""
-  Changelog: ""
+    - "Evolve Spearow"
+  Split: "2"
+  Changelog: "Fearow is pretty immediately strong, but will fall off later in the game compared to its counterpart, Pidgeot."
 - Number: 23
   Name: Ekans
   Type: [Poison]
@@ -831,124 +874,127 @@
   Type: [Electric]
   Abilities:
     Old: [Static, "Lightning-rod [hidden]"]
-    New: ["", ""]
-  Evolution: [{ Evolves to: Raichu, Method: Use-item, Level: null }]
+    New: [Static, Lightning-rod]
+  Evolution: [{ Evolves to: Raichu, Method: Thunderstone}]
   Stats:
     [
       Vanilla: { Hp: 35, Attack: 55, Defense: 40, Special-attack: 50, Special-defense: 50, Speed: 90, Bst: 320 },
-      Updated: { Hp: 35, Attack: 55, Defense: 40, Special-attack: 50, Special-defense: 50, Speed: 90, Bst: 320 },
-      Changes: { Hp: 0, Attack: 0, Defense: 0, Special-attack: 0, Special-defense: 0, Speed: 0, Bst: 0 },
+      Updated: { Hp: 65, Attack: 65, Defense: 40, Special-attack: 65, Special-defense: 50, Speed: 100, Bst: 385 },
+      Changes: { Hp: 30, Attack: 10, Defense: 0, Special-attack: 15, Special-defense: 0, Speed: 10, Bst: 65 },
     ]
   Learnset:
     [
       Base learnset version: Scarlet-violet,
-      { Move: Tail-whip, Level: 1, Modification: "" },
-      { Move: Growl, Level: 1, Modification: "" },
-      { Move: Thunder-shock, Level: 1, Modification: "" },
-      { Move: Quick-attack, Level: 1, Modification: "" },
-      { Move: Sweet-kiss, Level: 1, Modification: "" },
-      { Move: Charm, Level: 1, Modification: "" },
-      { Move: Nasty-plot, Level: 1, Modification: "" },
-      { Move: Play-nice, Level: 1, Modification: "" },
-      { Move: Nuzzle, Level: 1, Modification: "" },
-      { Move: Thunder-wave, Level: 4, Modification: "" },
-      { Move: Double-team, Level: 8, Modification: "" },
-      { Move: Electro-ball, Level: 12, Modification: "" },
-      { Move: Feint, Level: 16, Modification: "" },
-      { Move: Spark, Level: 20, Modification: "" },
-      { Move: Agility, Level: 24, Modification: "" },
-      { Move: Iron-tail, Level: 28, Modification: "" },
-      { Move: Discharge, Level: 32, Modification: "" },
-      { Move: Thunderbolt, Level: 36, Modification: "" },
-      { Move: Light-screen, Level: 40, Modification: "" },
-      { Move: Thunder, Level: 44, Modification: "" },
+      { Move: Charm, Level: 1 },
+      { Move: Tickle, Level: 1, Modification: "New" },
+      { Move: Thunder-shock, Level: 1 },
+      { Move: Feint, Level: 1, Modification: "Earlier"},
+      { Move: Quick-attack, Level: 4, Modification: "Earlier" },
+      { Move: Sweet-kiss, Level: 6, Modification: "Later" },
+      { Move: Spark, Level: 9, Modification: "Earlier" },
+      { Move: Nuzzle, Level: 11, Modification: "Later" },
+      { Move: Heart-stamp, Level: 13, Modification: "New" },
+      { Move: Double-team, Level: 15, Modification: "Later" },
+      { Move: Iron-tail, Level: 17, Modification: "Earlier" },
+      { Move: Electro-ball, Level: 20, Modification: "Later" },
+      { Move: Fake-out, Level: 22, Modification: "New" },
+      { Move: Agility, Level: 22, Modification: "Earlier" },
+      { Move: Headbutt, Level: 24, Modification: "New" },
+      { Move: Discharge, Level: 28, Modification: "Earlier"},
+      { Move: Encore, Level: 32, Modification: "New" },
+      { Move: Surf, Level: 35, Modification: "New" },
+      { Move: Draining-kiss, Level: 39, Modification: "New" },
+      { Move: Light-screen, Level: 40 },
+      { Move: Thunderbolt, Level: 41, Modification: "Later" },
+      { Move: Zen-headbutt, Level: 42, Modification: "New" },
+      { Move: Nasty-plot, Level: 44, Modification: "Later" },
+      { Move: Extreme-speed, Level: 48, Modification: "New" },
+      { Move: Volt-tackle, Level: 51, Modification: "New" }
     ]
   sprite_url: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/25.gif
   Location:
-    - ""
-  Split: ""
-  Changelog: ""
+    - "Evolve Pichu, Virbank Complex"
+  Split: "2"
+  Changelog: "To balance, or not to balance, around a Pokemon's unique item. A difficult question; I've tried to walk a middle ground and make Pikachu useable with and without its Light Ball."
 - Number: 26
   Name: Raichu
   Type: [Electric]
   Abilities:
     Old: [Static, "Lightning-rod [hidden]"]
-    New: ["", ""]
+    New: [Static, Lightning-rod]
   Evolution: []
   Stats:
     [
       Vanilla: { Hp: 60, Attack: 90, Defense: 55, Special-attack: 90, Special-defense: 80, Speed: 110, Bst: 485 },
-      Updated: { Hp: 60, Attack: 90, Defense: 55, Special-attack: 90, Special-defense: 80, Speed: 110, Bst: 485 },
-      Changes: { Hp: 0, Attack: 0, Defense: 0, Special-attack: 0, Special-defense: 0, Speed: 0, Bst: 0 },
+      Updated: { Hp: 70, Attack: 115, Defense: 55, Special-attack: 115, Special-defense: 80, Speed: 125, Bst: 560 },
+      Changes: { Hp: 10, Attack: 25, Defense: 0, Special-attack: 25, Special-defense: 0, Speed: 15, Bst: 75 },
     ]
   Learnset:
     [
       Base learnset version: Scarlet-violet,
-      { Move: Tail-whip, Level: 1, Modification: "" },
-      { Move: Growl, Level: 1, Modification: "" },
-      { Move: Thunder-shock, Level: 1, Modification: "" },
-      { Move: Thunder-wave, Level: 1, Modification: "" },
-      { Move: Thunder, Level: 1, Modification: "" },
-      { Move: Agility, Level: 1, Modification: "" },
-      { Move: Quick-attack, Level: 1, Modification: "" },
-      { Move: Double-team, Level: 1, Modification: "" },
-      { Move: Light-screen, Level: 1, Modification: "" },
-      { Move: Sweet-kiss, Level: 1, Modification: "" },
-      { Move: Charm, Level: 1, Modification: "" },
-      { Move: Spark, Level: 1, Modification: "" },
-      { Move: Iron-tail, Level: 1, Modification: "" },
-      { Move: Feint, Level: 1, Modification: "" },
-      { Move: Nasty-plot, Level: 1, Modification: "" },
-      { Move: Discharge, Level: 1, Modification: "" },
-      { Move: Electro-ball, Level: 1, Modification: "" },
-      { Move: Play-nice, Level: 1, Modification: "" },
-      { Move: Nuzzle, Level: 1, Modification: "" },
-      { Move: Thunderbolt, Level: 5, Modification: "" },
+      { Move: Charm, Level: 1, Modification: "Inherited" },
+      { Move: Thunder-shock, Level: 1, Modification: "Inherited" },
+      { Move: Feint, Level: 1, Modification: "Inherited"},
+      { Move: Quick-attack, Level: 4, Modification: "Inherited" },
+      { Move: Sweet-kiss, Level: 6, Modification: "Inherited" },
+      { Move: Spark, Level: 9, Modification: "Inherited" },
+      { Move: Nuzzle, Level: 11, Modification: "Inherited" },
+      { Move: Double-team, Level: 15, Modification: "Inherited" },
+      { Move: Iron-tail, Level: 17, Modification: "Inherited" },
+      { Move: Electro-ball, Level: 20, Modification: "Inherited" },
+      { Move: Agility, Level: 22, Modification: "Inherited" },
+      { Move: Discharge, Level: 28, Modification: "Inherited"},
+      { Move: Light-screen, Level: 40, Modification: "Inherited" },
+      { Move: Thunderbolt, Level: 43, Modification: "Inherited" },
     ]
   sprite_url: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/26.gif
   Location:
-    - ""
-  Split: ""
-  Changelog: ""
+    - "Evolve Pikachu"
+  Split: "3"
+  Changelog: "Raichu is a stronger Pikachu stat-wise, but has no access to the light ball, or all the unique moves that the series' mascot has access to. Choosing when or if to evolve will be crucial."
 - Number: 27
   Name: Sandshrew
   Type: [Ground]
   Abilities:
     Old: [Sand-veil, "Sand-rush [hidden]"]
-    New: ["", ""]
+    New: [Dry-skin, Rough-skin]
   Evolution: [{ Evolves to: Sandslash, Method: Level-up, Level: 22 }]
   Stats:
     [
       Vanilla: { Hp: 50, Attack: 75, Defense: 85, Special-attack: 20, Special-defense: 30, Speed: 40, Bst: 300 },
-      Updated: { Hp: 50, Attack: 75, Defense: 85, Special-attack: 20, Special-defense: 30, Speed: 40, Bst: 300 },
-      Changes: { Hp: 0, Attack: 0, Defense: 0, Special-attack: 0, Special-defense: 0, Speed: 0, Bst: 0 },
+      Updated: { Hp: 50, Attack: 75, Defense: 85, Special-attack: 20, Special-defense: 60, Speed: 70, Bst: 360 },
+      Changes: { Hp: 0, Attack: 0, Defense: 0, Special-attack: 0, Special-defense: 30, Speed: 30, Bst: 60 },
     ]
   Learnset:
     [
       Base learnset version: Scarlet-violet,
-      { Move: Scratch, Level: 1, Modification: "" },
-      { Move: Defense-curl, Level: 1, Modification: "" },
-      { Move: Poison-sting, Level: 3, Modification: "" },
-      { Move: Sand-attack, Level: 6, Modification: "" },
-      { Move: Rollout, Level: 9, Modification: "" },
-      { Move: Fury-cutter, Level: 12, Modification: "" },
-      { Move: Rapid-spin, Level: 15, Modification: "" },
-      { Move: Bulldoze, Level: 18, Modification: "" },
-      { Move: Swift, Level: 21, Modification: "" },
-      { Move: Fury-swipes, Level: 24, Modification: "" },
-      { Move: Agility, Level: 27, Modification: "" },
-      { Move: Slash, Level: 30, Modification: "" },
-      { Move: Dig, Level: 33, Modification: "" },
-      { Move: Gyro-ball, Level: 36, Modification: "" },
-      { Move: Swords-dance, Level: 39, Modification: "" },
-      { Move: Sandstorm, Level: 42, Modification: "" },
-      { Move: Earthquake, Level: 45, Modification: "" },
+      { Move: Scratch, Level: 1 },
+      { Move: Defense-curl, Level: 1 },
+      { Move: Poison-sting, Level: 3 },
+      { Move: Sand-attack, Level: 6 },
+      { Move: Rollout, Level: 7, Modification: "Earlier" },
+      { Move: Sand-tomb, Level: 9, Modificaiton: "New" },
+      { Move: Fury-cutter, Level: 11, Modification: "Earlier" },
+      { Move: Magnitude, Level: 14, Modification: "New" },
+      { Move: Rapid-spin, Level: 15 },
+      { Move: Metal-claw, Level: 20, Modification: "New" },
+      { Move: Dig, Level: 22, Modification: "Earlier" },
+      { Move: Steamroller, Level: 26, Modification: "New" },
+      { Move: Slash, Level: 30 },
+      { Move: Iron-head, Level: 34, Modification: "New" },
+      { Move: Swords-dance, Level: 38, Modification: "Earlier" },
+      { Move: Drill-run, Level: 41, Modification: "New" },
+      { Move: Sandstorm, Level: 42 },
+      { Move: Leech-life, Level: 45 },
+      { Move: Earthquake, Level: 50, Modification: "New" },
+      { Move: Crush-claw, Level: 54, Modification: "New" },
+      { Move: Night-slash, Level: 58, Modification: "New" },
     ]
   sprite_url: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/27.gif
   Location:
-    - ""
-  Split: ""
-  Changelog: ""
+    - "Relic Passage"
+  Split: "3"
+  Changelog: "Sandshrew is surprisingly well designed, especially for a Kantoian Pokemon. New, useful abilities reflecting its dex entries and a small stat bump are all it really needs to be a solid capture."
 - Number: 28
   Name: Sandslash
   Type: [Ground]
@@ -959,36 +1005,41 @@
   Stats:
     [
       Vanilla: { Hp: 75, Attack: 100, Defense: 110, Special-attack: 45, Special-defense: 55, Speed: 65, Bst: 450 },
-      Updated: { Hp: 75, Attack: 100, Defense: 110, Special-attack: 45, Special-defense: 55, Speed: 65, Bst: 450 },
-      Changes: { Hp: 0, Attack: 0, Defense: 0, Special-attack: 0, Special-defense: 0, Speed: 0, Bst: 0 },
+      Updated: { Hp: 75, Attack: 100, Defense: 110, Special-attack: 25, Special-defense: 65, Speed: 95, Bst: 490 },
+      Changes: { Hp: 0, Attack: 0, Defense: 0, Special-attack: 0, Special-defense: 10, Speed: 30, Bst: 40 },
     ]
   Learnset:
     [
       Base learnset version: Scarlet-violet,
-      { Move: Scratch, Level: 1, Modification: "" },
-      { Move: Sand-attack, Level: 1, Modification: "" },
-      { Move: Poison-sting, Level: 1, Modification: "" },
-      { Move: Defense-curl, Level: 1, Modification: "" },
-      { Move: Crush-claw, Level: 1, Modification: "" },
-      { Move: Rollout, Level: 9, Modification: "" },
-      { Move: Fury-cutter, Level: 12, Modification: "" },
-      { Move: Rapid-spin, Level: 15, Modification: "" },
-      { Move: Bulldoze, Level: 18, Modification: "" },
-      { Move: Swift, Level: 21, Modification: "" },
-      { Move: Fury-swipes, Level: 26, Modification: "" },
-      { Move: Sand-tomb, Level: 31, Modification: "" },
-      { Move: Slash, Level: 36, Modification: "" },
-      { Move: Dig, Level: 41, Modification: "" },
-      { Move: Gyro-ball, Level: 46, Modification: "" },
-      { Move: Swords-dance, Level: 51, Modification: "" },
-      { Move: Sandstorm, Level: 56, Modification: "" },
-      { Move: Earthquake, Level: 61, Modification: "" },
+      { Move: Scratch, Level: 1, Modification: "Inherited" },
+      { Move: Defense-curl, Level: 1, Modification: "Inherited" },
+      { Move: Poison-sting, Level: 3, Modification: "Inherited" },
+      { Move: Sand-attack, Level: 6, Modification: "Inherited" },
+      { Move: Rollout, Level: 7, Modification: "Inherited" },
+      { Move: Sand-tomb, Level: 9, Modificaiton: "Inherited" },
+      { Move: Fury-cutter, Level: 11, Modification: "Inherited" },
+      { Move: Magnitude, Level: 14, Modification: "Inherited" },
+      { Move: Rapid-spin, Level: 15, Modification: "Inherited" },
+      { Move: Metal-claw, Level: 20, Modification: "Inherited" },
+      { Move: Dig, Level: 22, Modification: "Inherited" },
+      { Move: Ice-punch, Level: 22, Modification: "New"},
+      { Move: Spikes, Level: 23, Modification: "New" },
+      { Move: Steamroller, Level: 24, Modification: New" },
+      { Move: Slash, Level: 33, Modification: "New"},
+      { Move: Iron-head, Level: 38, Modification: "New" },
+      { Move: Swords-dance, Level: 43, Modification: "Earlier" },
+      { Move: Drill-run, Level: 45, Modification: "New" },
+      { Move: Sandstorm, Level: 48, Modification: "Earlier" },
+      { Move: Leech-life, Level: 53, Modification: "Earlier" },
+      { Move: Earthquake, Level: 56, Modification: "New" },
+      { Move: Crush-claw, Level: 59, Modification: "New" },
+      { Move: Night-slash, Level: 61, Modification: "New" },
     ]
   sprite_url: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/28.gif
   Location:
-    - ""
-  Split: ""
-  Changelog: ""
+    - "Evolve Sandshrew"
+  Split: "3"
+  Changelog: "Sandslash stays a solid Pokemon, following Sandshrew's new abilities and improved move pool."
 - Number: 29
   Name: Nidoran-f
   Type: [Poison]
@@ -1275,63 +1326,94 @@
   Type: [Fire]
   Abilities:
     Old: [Flash-fire, "Drought [hidden]"]
-    New: ["", ""]
-  Evolution: [{ Evolves to: Ninetales, Method: Use-item, Level: null }]
+    New: [Flash-fire, Drought]
+  Evolution: [
+    { Evolves to: Ninetales, Method: Fire-stone },
+    { Evolves to: Ninetales, Method: Level-up while knowing 'Nasty-plot' }]
   Stats:
     [
       Vanilla: { Hp: 38, Attack: 41, Defense: 40, Special-attack: 50, Special-defense: 65, Speed: 65, Bst: 299 },
-      Updated: { Hp: 38, Attack: 41, Defense: 40, Special-attack: 50, Special-defense: 65, Speed: 65, Bst: 299 },
-      Changes: { Hp: 0, Attack: 0, Defense: 0, Special-attack: 0, Special-defense: 0, Speed: 0, Bst: 0 },
+      Updated: { Hp: 50, Attack: 40, Defense: 40, Special-attack: 70, Special-defense: 65, Speed: 85, Bst: 360 },
+      Changes: { Hp: 12, Attack: -1, Defense: 10, Special-attack: 20, Special-defense: 0, Speed: 20, Bst: 61 },
     ]
   Learnset:
     [
       Base learnset version: Scarlet-violet,
-      { Move: Tail-whip, Level: 1, Modification: "" },
-      { Move: Ember, Level: 1, Modification: "" },
-      { Move: Disable, Level: 4, Modification: "" },
-      { Move: Quick-attack, Level: 8, Modification: "" },
-      { Move: Spite, Level: 12, Modification: "" },
-      { Move: Incinerate, Level: 16, Modification: "" },
-      { Move: Confuse-ray, Level: 20, Modification: "" },
-      { Move: Will-o-wisp, Level: 24, Modification: "" },
-      { Move: Extrasensory, Level: 28, Modification: "" },
-      { Move: Flamethrower, Level: 32, Modification: "" },
-      { Move: Imprison, Level: 36, Modification: "" },
-      { Move: Fire-spin, Level: 40, Modification: "" },
-      { Move: Safeguard, Level: 44, Modification: "" },
-      { Move: Inferno, Level: 48, Modification: "" },
-      { Move: Fire-blast, Level: 52, Modification: "" },
+      { Move: Ember, Level: 1 },
+      { Move: Tail-whip, Level: 1 },
+      { Move: Hypnosis, Level: 5, Modification: "New" },
+      { Move: Fire-spin, Level: 8, Modification: "Earlier"},
+      { Move: Quick-attack, Level: 9, Modification: "Earlier" },
+      { Move: Confuse-Ray, Level: 12, Modification: "Earlier" },
+      { Move: Incinerate, Level: 15, Modification: "Earlier" },
+      { Move: Payback, Level: 18, Modification: "New" },
+      { Move: Will-o-wisp, Level: 20, Modification: "Earlier" },
+      { Move: Faint-attack, Level: 23, Modification: "New" },
+      { Move: Hex, Level: 26, Modification: "New" },
+      { Move: Flame-burst, Level: 28, Modification: "New" },
+      { Move: Extrasensory, Level: 30, Modification: "Later" },
+      { Move: Safeguard, Level: 32, Modification: "Earlier" },
+      { Move: Energy-ball, Level: 34, Modification: "Later" },
+      { Move: Flamethrower, Level: 39, Modification: "New" },
+      { Move: Nasty-plot, Level: 40, Modification: "New" },
+      { Move: Moonblast, Level: 42, Modification: "New" },
+      { Move: Solar-beam, Level: 45, Modification: "New" },
+      { Move: Inferno, Level: 48 },
+      { Move: Fire-blast, Level: 52 }
     ]
   sprite_url: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/37.gif
   Location:
-    - ""
-  Split: ""
-  Changelog: ""
+    - "Empty Lot"
+  Split: "3"
+  Changelog: "Vulpix is pretty reliable; only minimal stat changes were required to supplement access to its iconic hidden ability and an already strong move-pool."
 - Number: 38
   Name: Ninetales
   Type: [Fire]
   Abilities:
     Old: [Flash-fire, "Drought [hidden]"]
-    New: ["", ""]
+    New: [Flash-fire, Drought]
   Evolution: []
   Stats:
     [
       Vanilla: { Hp: 73, Attack: 76, Defense: 75, Special-attack: 81, Special-defense: 100, Speed: 100, Bst: 505 },
-      Updated: { Hp: 73, Attack: 76, Defense: 75, Special-attack: 81, Special-defense: 100, Speed: 100, Bst: 505 },
-      Changes: { Hp: 0, Attack: 0, Defense: 0, Special-attack: 0, Special-defense: 0, Speed: 0, Bst: 0 },
+      Updated: { Hp: 80, Attack: 76, Defense: 85, Special-attack: 100, Special-defense: 104, Speed: 110, Bst: 555 },
+      Changes: { Hp: 7, Attack: 0, Defense: 10, Special-attack: 19, Special-defense: 4, Speed: 10, Bst: 50 },
     ]
   Learnset:
     [
       Base learnset version: Scarlet-violet,
-      { Move: Tail-whip, Level: 1, Modification: "" },
-      { Move: Flamethrower, Level: 1, Modification: "" },
-      { Move: Quick-attack, Level: 1, Modification: "" },
+      { Move: Icy Wind, Level: 1, Modification: "New"  },
+      { Move: Imprison, Level: 1, Modification: "New"  },
+      { Move: Foul-play, Level: 1, Modification: "New"  },
+      { Move: Pain-split, Level: 1, Modification: "New"  },
+      { Move: Sunny-day, Level: 1, Modification: "New"},
+      { Move: Ember, Level: 1, Modification: "Inherited" },
+      { Move: Tail-whip, Level: 1, Modification: "Inherited" },
+      { Move: Hypnosis, Level: 5, Modification: "Inherited" },
+      { Move: Fire-spin, Level: 8, Modification: "Inherited" },
+      { Move: Quick-attack, Level: 9, Modification: "Inherited" },
+      { Move: Confuse-Ray, Level: 12, Modification: "Inherited" },
+      { Move: Incinerate, Level: 15, Modification: "Inherited" },
+      { Move: Payback, Level: 18, Modification: "Inherited" },
+      { Move: Will-o-wisp, Level: 20, Modification: "Inherited" },
+      { Move: Faint-attack, Level: 23, Modification: "Inherited" },
+      { Move: Hex, Level: 26, Modification: "Inherited" },
+      { Move: Flame-burst, Level: 28, Modification: "Inherited" },
+      { Move: Nasty-plot, Level: 30, Modification: "Inherited" },
+      { Move: Extrasensory, Level: 31, Modification: "Inherited" },
+      { Move: Safeguard, Level: 36, Modification: "Inherited" },
+      { Move: Flamethrower, Level: 36, Modification: "Inherited" },
+      { Move: Energy-ball, Level: 39, Modification: "Inherited" },
+      { Move: Moonblast, Level: 42, Modification: "Inherited" },
+      { Move: Solar-beam, Level: 45, Modification: "Inherited" },
+      { Move: Inferno, Level: 48, Modification: "Inherited" },
+      { Move: Fire-blast, Level: 52, Modification: "Inherited" }
     ]
   sprite_url: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/38.gif
   Location:
-    - ""
-  Split: ""
-  Changelog: ""
+    - "Evolve Vulpix"
+  Split: "3"
+  Changelog: "A strong special attack stat, speed stat, sun and strong STAB moves will make Ninetales a terrifying force on the field."
 - Number: 39
   Name: Jigglypuff
   Type: [Normal, Fairy]
@@ -1422,13 +1504,13 @@
   Type: [Poison, Flying]
   Abilities:
     Old: [Inner-focus, "Infiltrator [hidden]"]
-    New: ["", ""]
+    New: [Inner-focus, Inner-focus]
   Evolution: [{ Evolves to: Golbat, Method: Level-up, Level: 22 }]
   Stats:
     [
       Vanilla: { Hp: 40, Attack: 45, Defense: 35, Special-attack: 30, Special-defense: 40, Speed: 55, Bst: 245 },
-      Updated: { Hp: 40, Attack: 45, Defense: 35, Special-attack: 30, Special-defense: 40, Speed: 55, Bst: 245 },
-      Changes: { Hp: 0, Attack: 0, Defense: 0, Special-attack: 0, Special-defense: 0, Speed: 0, Bst: 0 },
+      Updated: { Hp: 40, Attack: 60, Defense: 35, Special-attack: 30, Special-defense: 40, Speed: 55, Bst: 245 },
+      Changes: { Hp: 0, Attack: 15, Defense: 0, Special-attack: 0, Special-defense: 0, Speed: 0, Bst: 0 },
     ]
   Learnset:
     [

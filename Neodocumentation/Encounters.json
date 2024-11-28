@@ -20,9 +20,9 @@
                     "Encounter Type": "Fishing",
                     "Levels": "Lvls 3 - 7",
                     "Pokemon": [
-                        {"Name": "Krabby", "Rarity": "60%"},
-                        {"Name": "Lotad", "Rarity": "40%"},
-                        {"Name": "Wooper", "Rarity": "10%"}
+                        {"Name": "Ducklett", "Rarity": "60%"},
+                        {"Name": "Krabby", "Rarity": "30%"},
+                        {"Name": "Wooper", "Rarity": "5%"}
                     ]
                 },
                 {
@@ -63,7 +63,7 @@
                     "Encounter Type": "Fishing",
                     "Levels": "Lvls 3 - 7",
                     "Pokemon": [
-                        {"Name": "Krabby", "Rarity": "60%"},
+                        {"Name": "Surskit", "Rarity": "60%"},
                         {"Name": "Lotad", "Rarity": "30%"},
                         {"Name": "Magikarp", "Rarity": "5%"},
                         {"Name": "Feebas", "Rarity": "5%"}
@@ -135,7 +135,7 @@
                     "Encounter Type": "Fishing",
                     "Levels": "Lvls 3 - 7",
                     "Pokemon": [
-                        {"Name": "Krabby", "Rarity": "60%"},
+                        {"Name": "Surskit", "Rarity": "60%"},
                         {"Name": "Lotad", "Rarity": "30%"},
                         {"Name": "Magikarp", "Rarity": "5%"},
                         {"Name": "Feebas", "Rarity": "5%"}
