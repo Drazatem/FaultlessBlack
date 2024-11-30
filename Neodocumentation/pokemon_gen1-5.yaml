@@ -915,7 +915,7 @@
   Location:
     - "Evolve Pichu, Virbank Complex"
   Split: "2"
-  Changelog: "To balance, or not to balance, around a Pokemon's unique item. A difficult question; I've tried to walk a middle ground and make Pikachu useable with and without its Light Ball."
+  Changelog: "I've tried to walk a middle ground and make Pikachu useable with and without its Light Ball."
 - Number: 26
   Name: Raichu
   Type: [Electric]
@@ -1504,78 +1504,89 @@
   Type: [Poison, Flying]
   Abilities:
     Old: [Inner-focus, "Infiltrator [hidden]"]
-    New: [Inner-focus, Inner-focus]
+    New: [Inner-focus, Infiltrator]
   Evolution: [{ Evolves to: Golbat, Method: Level-up, Level: 22 }]
   Stats:
     [
       Vanilla: { Hp: 40, Attack: 45, Defense: 35, Special-attack: 30, Special-defense: 40, Speed: 55, Bst: 245 },
-      Updated: { Hp: 40, Attack: 60, Defense: 35, Special-attack: 30, Special-defense: 40, Speed: 55, Bst: 245 },
-      Changes: { Hp: 0, Attack: 15, Defense: 0, Special-attack: 0, Special-defense: 0, Speed: 0, Bst: 0 },
+      Updated: { Hp: 40, Attack: 60, Defense: 40, Special-attack: 30, Special-defense: 40, Speed: 70, Bst: 280 },
+      Changes: { Hp: 0, Attack: 15, Defense: 5, Special-attack: 0, Special-defense: 0, Speed: 15, Bst: 35 },
     ]
   Learnset:
     [
       Base learnset version: Sword-shield,
-      { Move: Supersonic, Level: 1, Modification: "" },
-      { Move: Absorb, Level: 1, Modification: "" },
-      { Move: Astonish, Level: 5, Modification: "" },
-      { Move: Mean-look, Level: 10, Modification: "" },
-      { Move: Poison-fang, Level: 15, Modification: "" },
-      { Move: Quick-guard, Level: 20, Modification: "" },
-      { Move: Air-cutter, Level: 25, Modification: "" },
-      { Move: Bite, Level: 30, Modification: "" },
-      { Move: Haze, Level: 35, Modification: "" },
-      { Move: Venoshock, Level: 40, Modification: "" },
-      { Move: Confuse-ray, Level: 45, Modification: "" },
-      { Move: Air-slash, Level: 50, Modification: "" },
-      { Move: Leech-life, Level: 55, Modification: "" },
+      { Move: Mean-look, Level: 1 },
+      { Move: Supersonic, Level: 1 },
+      { Move: Absorb, Level: 1 },
+      { Move: Astonish, Level: 5 },
+      { Move: Confuse-ray, Level: 7, Modification: "Earlier" },
+      { Move: Bite, Level: 11, Modification: "Earlier" },
+      { Move: Hypnosis, Level: 13, Modification: "New" },
+      { Move: Leech-life, Level: 17, Modification: "Earlier" },
+      { Move: Poison-fang, Level: 19, Modification: "Later" },
+      { Move: Screech, Level: 22, Modification: "New" },
+      { Move: Wing-attack, Level: 24, Modification: "Later" },
+      { Move: Pursuit, Level: 29, Modification: "New" },
+      { Move: Giga-drain, Level: 31, Modification: "New" },
+      { Move: Haze, Level: 35 },
+      { Move: Steel-wing, Level: 37, Modification: "New" },
+      { Move: Brave-bird, Level: 41, Modification: "New" },
+      { Move: Zen-headbutt, Level: 43, Modification: "New" },
+      { Move: Super-fang, Level: 46, Modification: "New" }
     ]
   sprite_url: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/41.gif
   Location:
-    - ""
+    - "Castelia Sewers"
   Split: ""
-  Changelog: ""
+  Changelog: "Because Zubat is found in split 3 near evolution, some key moves were rebalanced to ensure they would be available at or after capture"
 - Number: 42
   Name: Golbat
   Type: [Poison, Flying]
   Abilities:
     Old: [Inner-focus, "Infiltrator [hidden]"]
-    New: ["", ""]
+    New: [Inner-focus, Infiltrator]
   Evolution: [{ Evolves to: Crobat, Method: Level-up, Level: null }]
   Stats:
     [
       Vanilla: { Hp: 75, Attack: 80, Defense: 70, Special-attack: 65, Special-defense: 75, Speed: 90, Bst: 455 },
-      Updated: { Hp: 75, Attack: 80, Defense: 70, Special-attack: 65, Special-defense: 75, Speed: 90, Bst: 455 },
-      Changes: { Hp: 0, Attack: 0, Defense: 0, Special-attack: 0, Special-defense: 0, Speed: 0, Bst: 0 },
+      Updated: { Hp: 75, Attack: 90, Defense: 70, Special-attack: 60, Special-defense: 75, Speed: 110, Bst: 480 },
+      Changes: { Hp: 0, Attack: 10, Defense: 0, Special-attack: -5, Special-defense: 0, Speed: 20, Bst: 25 },
     ]
   Learnset:
     [
       Base learnset version: Sword-shield,
-      { Move: Supersonic, Level: 1, Modification: "" },
-      { Move: Absorb, Level: 1, Modification: "" },
-      { Move: Screech, Level: 1, Modification: "" },
-      { Move: Mean-look, Level: 1, Modification: "" },
-      { Move: Astonish, Level: 1, Modification: "" },
-      { Move: Poison-fang, Level: 15, Modification: "" },
-      { Move: Quick-guard, Level: 20, Modification: "" },
-      { Move: Air-cutter, Level: 27, Modification: "" },
-      { Move: Bite, Level: 34, Modification: "" },
-      { Move: Haze, Level: 41, Modification: "" },
-      { Move: Venoshock, Level: 48, Modification: "" },
-      { Move: Confuse-ray, Level: 55, Modification: "" },
-      { Move: Air-slash, Level: 62, Modification: "" },
-      { Move: Leech-life, Level: 69, Modification: "" },
+      { Move: Mean-look, Level: 1, Modification: "Inherited" },
+      { Move: Supersonic, Level: 1, Modification: "Inherited" },
+      { Move: Absorb, Level: 1, Modification: "Inherited" },
+      { Move: Astonish, Level: 5, Modification: "Inherited" },
+      { Move: Confuse-ray, Level: 7, Modification: "Inherited" },
+      { Move: Bite, Level: 11, Modification: "Inherited" },
+      { Move: Hypnosis, Level: 13, Modification: "Inherited" },
+      { Move: Leech-life, Level: 17, Modification: "Inherited" },
+      { Move: Poison-fang, Level: 19, Modification: "Inherited" },
+      { Move: Screech, Level: 22, Modification: "Inherited" },
+      { Move: Crunch, Level: 24, Modification: "Later" },
+      { Move: Wing-attack, Level: 27, Modification: "Later" },
+      { Move: Pursuit, Level: 32, Modification: "New" },
+      { Move: Giga-drain, Level: 35, Modification: "New" },
+      { Move: Haze, Level: 40, Modification: "Earlier" },
+      { Move: Steel-wing, Level: 43, Modification: "New" },
+      { Move: Brave-bird, Level: 48, Modification: "New" },
+      { Move: Zen-headbutt, Level: 51, Modification: "New" },
+      { Move: Super-fang, Level: 55, Modification: "New" },
+      { Move: Tailwind, Level: 60, Modification: "New" }
     ]
   sprite_url: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/42.gif
   Location:
-    - ""
-  Split: ""
-  Changelog: ""
+    - "Evolve Zubat"
+  Split: "3"
+  Changelog: "Golbat expands on Zubat's speedy physical attacker role, with a few more moves to help it out"
 - Number: 43
   Name: Oddish
   Type: [Grass, Poison]
   Abilities:
     Old: [Chlorophyll, "Run-away [hidden]"]
-    New: ["", ""]
+    New: [Natural-cure, Run-away]
   Evolution: [{ Evolves to: Gloom, Method: Level-up, Level: 21 }]
   Stats:
     [
@@ -1586,34 +1597,39 @@
   Learnset:
     [
       Base learnset version: Scarlet-violet,
-      { Move: Absorb, Level: 1, Modification: "" },
-      { Move: Growth, Level: 1, Modification: "" },
-      { Move: Acid, Level: 4, Modification: "" },
-      { Move: Sweet-scent, Level: 8, Modification: "" },
-      { Move: Mega-drain, Level: 12, Modification: "" },
-      { Move: Poison-powder, Level: 14, Modification: "" },
-      { Move: Stun-spore, Level: 16, Modification: "" },
-      { Move: Sleep-powder, Level: 18, Modification: "" },
-      { Move: Giga-drain, Level: 20, Modification: "" },
-      { Move: Toxic, Level: 24, Modification: "" },
-      { Move: Moonblast, Level: 28, Modification: "" },
-      { Move: Grassy-terrain, Level: 32, Modification: "" },
-      { Move: Moonlight, Level: 36, Modification: "" },
-      { Move: Petal-dance, Level: 40, Modification: "" },
+      { Move: Absorb, Level: 1 },
+      { Move: Growth, Level: 1 },
+      { Move: Tickle, Level: 3, Modification: "New"},
+      { Move: Sweet-scent, Level: 5 },
+      { Move: Acid, Level: 8, Modification: "Later" },
+      { Move: Poison-powder, Level: 13, Modification: "Earlier" },
+      { Move: Stun-spore, Level: 14, Modification: "Earlier" },
+      { Move: Razor-leaf, Level: 15, Modification: "New" },
+      { Move: Sleep-powder, Level: 17, Modification: "Earlier" },
+      { Move: Mega-drain, Level: 19, Modification: "Later" },
+      { Move: Lucky-chant, Level: 21, Modification: "New" },
+      { Move: Nature-power, Level: 23, Modification: "New"},
+      { Move: Sludge, Level: 25, Modification: "New" },
+      { Move: Moonlight, Level: 28, Modification: "Earlier" },
+      { Move: Giga-drain, Level: 31, Modification: "Later" },
+      { Move: Secret-power, Level: 35, Modification: "New" },
+      { Move: Toxic, Level: 39, Modification: "Later" },
+      { Move: Moonblast, Level: 43, Modification: "Later" },
+      { Move: Petal-dance, Level: 51, Modification: "Later" },
     ]
   sprite_url: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/43.gif
   Location:
-    - ""
-  Split: ""
-  Changelog: ""
+    - "Route 19"
+  Split: "1"
+  Changelog: "Changed the structure of the learnset so that Oddish ramps in power properly"
 - Number: 44
   Name: Gloom
   Type: [Grass, Poison]
   Abilities:
     Old: [Chlorophyll, "Stench [hidden]"]
-    New: ["", ""]
+    New: [Effect-spore, Stench]
   Evolution:
-    [{ Evolves to: Vileplume, Method: Use-item, Level: null }, { Evolves to: Bellossom, Method: Use-item, Level: null }]
+    [{ Evolves to: Vileplume, Method: Level-up, Condition: Knowing Giga-Drain }, { Evolves to: Bellossom, Method: Level-up, Condition: Knowing Leaf-blade }]
   Stats:
     [
       Vanilla: { Hp: 60, Attack: 65, Defense: 70, Special-attack: 85, Special-defense: 75, Speed: 40, Bst: 395 },
@@ -1623,62 +1639,79 @@
   Learnset:
     [
       Base learnset version: Scarlet-violet,
-      { Move: Acid, Level: 1, Modification: "" },
-      { Move: Absorb, Level: 1, Modification: "" },
-      { Move: Growth, Level: 1, Modification: "" },
-      { Move: Sweet-scent, Level: 1, Modification: "" },
-      { Move: Mega-drain, Level: 12, Modification: "" },
-      { Move: Poison-powder, Level: 14, Modification: "" },
-      { Move: Stun-spore, Level: 16, Modification: "" },
-      { Move: Sleep-powder, Level: 18, Modification: "" },
-      { Move: Giga-drain, Level: 20, Modification: "" },
-      { Move: Toxic, Level: 26, Modification: "" },
-      { Move: Moonblast, Level: 32, Modification: "" },
-      { Move: Grassy-terrain, Level: 38, Modification: "" },
-      { Move: Moonlight, Level: 44, Modification: "" },
-      { Move: Petal-dance, Level: 50, Modification: "" },
+      { Move: Absorb, Level: 1, Modification: "Inherited" },
+      { Move: Growth, Level: 1, Modification: "Inherited" },
+      { Move: Tickle, Level: 3, Modification: "Inherited" },
+      { Move: Sweet-scent, Level: 5, Modification: "Inherited" },
+      { Move: Acid, Level: 8, Modification: "Inherited" },
+      { Move: Poison-powder, Level: 13, Modification: "Inherited" },
+      { Move: Stun-spore, Level: 14, Modification: "Inherited" },
+      { Move: Razor-leaf, Level: 15, Modification: "Inherited" },
+      { Move: Sleep-powder, Level: 17, Modification: "Inherited" },
+      { Move: Mega-drain, Level: 19, Modification: "Inherited" },
+      { Move: Lucky-chant, Level: 21, Modification: "Inherited" },
+      { Move: Acid-spray, Level: 23, ModificationL: "New" },
+      { Move: Sludge, Level: 26, Modification: "New" },
+      { Move: Moonlight, Level: 29, Modification: "Earlier" },
+      { Move: Giga-drain, Level: 34, Modification: "Later" },
+      { Move: Leaf-blade, Level: 34, Modification: "New" },
+      { Move: Secret-power, Level: 39, Modification: "New" },
+      { Move: Toxic, Level: 44, Modification: "Later" },
+      { Move: Sludge-bomb, Level: 47, Modification: "New" },
+      { Move: Moonblast, Level: 49, Modification: "Later" },
+      { Move: Petal-dance, Level: 54, Modification: "Later" }
     ]
   sprite_url: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/44.gif
   Location:
-    - ""
-  Split: ""
-  Changelog: ""
+    - "Evolve Oddish"
+  Split: "2"
+  Changelog: "Emphasised Gloom's special attacking nature by rebalancing stats and giving it access to more special moves."
 - Number: 45
   Name: Vileplume
   Type: [Grass, Poison]
   Abilities:
     Old: [Chlorophyll, "Effect-spore [hidden]"]
-    New: ["", ""]
+    New: [Effect-spore, Thick-fat]
   Evolution: []
   Stats:
     [
       Vanilla: { Hp: 75, Attack: 80, Defense: 85, Special-attack: 110, Special-defense: 90, Speed: 50, Bst: 490 },
-      Updated: { Hp: 75, Attack: 80, Defense: 85, Special-attack: 110, Special-defense: 90, Speed: 50, Bst: 490 },
-      Changes: { Hp: 0, Attack: 0, Defense: 0, Special-attack: 0, Special-defense: 0, Speed: 0, Bst: 0 },
+      Updated: { Hp: 95, Attack: 70, Defense: 95, Special-attack: 120, Special-defense: 95, Speed: 50, Bst: 525 },
+      Changes: { Hp: 20, Attack: -10, Defense: 10, Special-attack: 10, Special-defense: 5, Speed: 0, Bst: 35 },
     ]
   Learnset:
     [
       Base learnset version: Scarlet-violet,
-      { Move: Acid, Level: 1, Modification: "" },
-      { Move: Absorb, Level: 1, Modification: "" },
-      { Move: Mega-drain, Level: 1, Modification: "" },
-      { Move: Growth, Level: 1, Modification: "" },
-      { Move: Poison-powder, Level: 1, Modification: "" },
-      { Move: Stun-spore, Level: 1, Modification: "" },
-      { Move: Sleep-powder, Level: 1, Modification: "" },
-      { Move: Petal-dance, Level: 1, Modification: "" },
-      { Move: Toxic, Level: 1, Modification: "" },
-      { Move: Giga-drain, Level: 1, Modification: "" },
-      { Move: Sweet-scent, Level: 1, Modification: "" },
-      { Move: Moonlight, Level: 1, Modification: "" },
-      { Move: Grassy-terrain, Level: 1, Modification: "" },
-      { Move: Moonblast, Level: 1, Modification: "" },
+      { Move: Ingrain, Level: 1, Modification: "New" },
+      { Move: Earth-power, Level: 1, Modification: "New" },
+      { Move: Aromatherapy, Level: 1, Modification: "New" },
+      { Move: Leaf-storm, Level: 1, Modification: "New" },
+      { Move: Growth, Level: 1, Modification: "Inherited" },
+      { Move: Tickle, Level: 3, Modification: "Inherited" },
+      { Move: Sweet-scent, Level: 5, Modification: "Inherited" },
+      { Move: Acid, Level: 8, Modification: "Inherited" },
+      { Move: Poison-powder, Level: 13, Modification: "Inherited" },
+      { Move: Stun-spore, Level: 14, Modification: "Inherited" },
+      { Move: Razor-leaf, Level: 15, Modification: "Inherited" },
+      { Move: Sleep-powder, Level: 17, Modification: "Inherited" },
+      { Move: Mega-drain, Level: 19, Modification: "Inherited" },
+      { Move: Lucky-chant, Level: 21, Modification: "Inherited" },
+      { Move: Acid-spray, Level: 23, Modification: "Inherited"},
+      { Move: Sludge, Level: 26, Modification: "Inherited"},
+      { Move: Moonlight, Level: 29, Modification: "Inherited" },
+      { Move: Giga-drain, Level: 34, Modification: "Inherited" },
+      { Move: Leaf-blade, Level: 34, Modification: "Inherited" },
+      { Move: Secret-power, Level: 39, Modification: "Inherited" },
+      { Move: Toxic, Level: 44, Modification: "Inherited" },
+      { Move: Sludge-bomb, Level: 47, Modification: "Inherited" },
+      { Move: Moonblast, Level: 49, Modification: "Inherited" },
+      { Move: Petal-dance, Level: 54, Modification: "Inherited" }
     ]
   sprite_url: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/45.gif
   Location:
-    - ""
-  Split: ""
-  Changelog: ""
+    - "Evolve Gloom"
+  Split: "3"
+  Changelog: "Tweaked Vileplume's stats to emphasise its role as a strong special tank. Its new abilities benefit its tanking capabilities."
 - Number: 46
   Name: Paras
   Type: [Bug, Grass]
@@ -1753,8 +1786,8 @@
   Type: [Bug, Poison]
   Abilities:
     Old: [Compound-eyes, Tinted-lens, "Run-away [hidden]"]
-    New: ["", ""]
-  Evolution: [{ Evolves to: Venomoth, Method: Level-up, Level: 31 }]
+    New: [Shield-dust, Tinted-lens]
+  Evolution: [{ Evolves to: Venomoth, Method: Level-up, Level: 21 }]
   Stats:
     [
       Vanilla: { Hp: 60, Attack: 55, Defense: 50, Special-attack: 40, Special-defense: 55, Speed: 45, Bst: 305 },
@@ -1788,7 +1821,7 @@
   Type: [Bug, Poison]
   Abilities:
     Old: [Shield-dust, Tinted-lens, "Wonder-skin [hidden]"]
-    New: ["", ""]
+    New: [Wonder-skin, Tinted-lens]
   Evolution: []
   Stats:
     [
